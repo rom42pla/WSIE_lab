@@ -1,0 +1,233 @@
+https://phd.uniroma1.it/web/BARDH-PRENKAJ_nP1602894_IT.aspx
+
+<!doctype html>
+<html>
+ <head> 
+  <!-- Global site tag (gtag.js) - Google Analytics --> 
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132212058-1"></script> 
+  <script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-132212058-1');
+	</script> 
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="description" content="Sapienza Università di Roma - Dottorato Ricerca - Ph.D">
+  <meta name="author" content="Cantieri Informatici Srl">
+  <meta name="copyright" content="Sapienza Università di Roma">
+  <meta name="robots" content="follow">
+  <link rel="shortcut icon" href="https://corsidilaurea.uniroma1.it/favicon.ico" type="image/vnd.microsoft.icon">
+  <title>
+	BARDH PRENKAJ | INFORMATICA
+</title>
+  <link rel="stylesheet" href="css/css.css">
+  <link rel="stylesheet" href="css/font-awesome.css">
+  <link type="text/css" rel="stylesheet" href="css/css_oXI7zYOfVrMuE-vswYqT3G_fO1eGr2PS8RacyfvisTg.css" media="all">
+  <link type="text/css" rel="stylesheet" href="css/css_Tsx9yq4Nq1FdeatAjAG2kIl9yHQZcJASK4fIyNzYRPo.css" media="all">
+  <link type="text/css" rel="stylesheet" href="css/css_eovk-oCx745N4L4jT9HSyZWG0wsKfGc69WR-VbPVXws.css" media="all"> 
+  <style>
+        #sliding-popup.sliding-popup-bottom, #sliding-popup.sliding-popup-bottom .eu-cookie-withdraw-banner, .eu-cookie-withdraw-tab {
+            background: #822433;
+        }
+
+            #sliding-popup.sliding-popup-bottom.eu-cookie-withdraw-wrapper {
+                background: transparent
+            }
+
+        #sliding-popup .popup-content #popup-text h1, #sliding-popup .popup-content #popup-text h2, #sliding-popup .popup-content #popup-text h3, #sliding-popup .popup-content #popup-text p, .eu-cookie-compliance-more-button, .eu-cookie-compliance-secondary-button, .eu-cookie-withdraw-tab {
+            color: #ffffff !important;
+        }
+
+        .eu-cookie-withdraw-tab {
+            border-color: #ffffff;
+        }
+    </style> 
+  <link type="text/css" rel="stylesheet" href="css/bootstrap.css" media="all">
+  <link type="text/css" rel="stylesheet" href="css/css_RAuRyNNlT46ihe0vatORGkikPVbV69C3tHuUs_tYmFY.css" media="all"> 
+  <!-- HTML5 element support for IE6-8 --> 
+  <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+    <![endif]--> 
+  <script src="js/js_MsNizcNh36bVfFe5oouTB1FVTIU7f4gqtmZRUKOkOaw.js"></script> 
+  <script src="js/js_BLxotNs2yt7YGlf9QRI9L9AMfdnkQfnN-_ADBTW3SiE.js"></script> 
+  <script src="js/bootstrap.js"></script> 
+  <script src="js/js_aSPXH4ZU6Ixr1lguwpDj5kblMlZbEVlKXGRGgg04ZZs.js"></script> 
+  <script src="js/js_faptSbAjrgjeAoZPXIJ_8n0zNQ-n-XTpY2kBYUPahjg.js"></script> 
+  <script src="js/js_p6OnzgpVo9IMpCF_TimNNF0zrwLTuXD1Or92v4xgw9o.js"></script> 
+  <script src="js/js_mBQQnv2jfT7hV2YFgICrM1KFECoRoI4UlzREm5pJWyg.js"></script> 
+ </head> 
+ <body class="navbar-is-fixed-top html front not-logged-in no-sidebars page-node page-node-5559 node-type-home-page i18n-it dipartimento site-name-lines-2 eu-cookie-compliance-processed" style="padding-bottom: 59px;" cz-shortcut-listen="true"> 
+  <form name="aspnetForm" method="post" action="StudenteDettaglio.aspx?m=1602894&amp;i=3507&amp;l=IT" id="aspnetForm"> 
+   <div> 
+    <input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value=""> 
+    <input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value=""> 
+    <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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"> 
+   </div> 
+   <script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script> 
+   <div> 
+    <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="F6C60448"> 
+    <input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value=""> 
+    <input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="sf4m0TuaiG/nWVsQZq/CJd3M/5cBToS1mei3cL2MtjS4U+WtEm7m9ECTRFTcOCPZaY9jfCc85Sio4OSSGABqRCRRxsZYjxTgv8S6QXVob2qCFsbtCAxNSbtS8FIwdOgNrupOLw+wjV1KnGPC/15YvxfwEGg="> 
+   </div> 
+   <div id="skip-link"> 
+    <a href="#main-content" class="element-invisible element-focusable">Salta al contenuto principale</a> 
+   </div> 
+   <header id="navbar" role="banner" class="navbar navbar-fixed-top navbar-default"> 
+    <div class="container"> 
+     <div class="region region-header-top"> 
+      <section id="block-locale-language" class="block block-locale clearfix"> 
+       <ul class="language-switcher-locale-url"> 
+        <li class="en last"><a id="ctl00_lbCambiaLingua" href="javascript:__doPostBack('ctl00$lbCambiaLingua','')"><strong>Italiano</strong>|English</a></li> 
+       </ul> 
+      </section> 
+      <section id="block-search-form" class="block block-search clearfix"> 
+      </section> 
+     </div> 
+     <div class="navbar-header"> 
+      <a href="https://www.uniroma1.it/it/"> <img class="logo pull-left" src="immagini/logo.png" alt="Uniroma 1"> </a> 
+      <h1 class="name navbar-brand" style="font-size: 18px; line-height: 1.1em; padding-top: 18px;"> Dottorato in INFORMATICA</h1> 
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> 
+     </div> 
+     <div class="navbar-collapse collapse" id="navbar-collapse"> 
+      <nav role="navigation"> 
+       <ul class="menu nav navbar-nav"> 
+        <li class="expanded dropdown"> <a href="https://www.di.uniroma1.it/" title="" data-target="#" class="dropdown-toggle" data-toggle="dropdown"> Dipartimento di Informatica, Via Salaria 113<span class="caret"></span></a> </li> 
+       </ul> 
+      </nav> 
+     </div> 
+    </div> 
+   </header> 
+   <section> 
+    <div class="container"> 
+     <a id="main-content"></a> 
+    </div> 
+   </section> 
+   <input type="hidden" name="ctl00$cp1$codiceInfostud" id="ctl00_cp1_codiceInfostud" value="11041"> 
+   <input type="hidden" name="ctl00$cp1$matricolaInfostud" id="ctl00_cp1_matricolaInfostud" value="1602894"> 
+   <input type="hidden" name="ctl00$cp1$idDottorando" id="ctl00_cp1_idDottorando" value="7388"> 
+   <input type="hidden" name="ctl00$cp1$codiceFiscale" id="ctl00_cp1_codiceFiscale" value="PRNBDH95M09Z160W"> 
+   <section id="breadcrumb"> 
+    <div class="container"> 
+     <div class="container"> 
+      <div id="ctl00_cp1_incMenuHeader_bcDott"> 
+       <ol class="breadcrumb"> 
+        <li><a href="https://www.di.uniroma1.it/">Home</a></li> 
+        <li><a href="INFORMATICA_nD3507_IT.aspx">INFORMATICA</a></li> 
+        <li><a href="DOTTORANDI-INFORMATICA_nI3507_IT.aspx">Dottorandi</a></li> 
+        <li class="active">BARDH PRENKAJ</li> 
+       </ol> 
+      </div> 
+     </div> 
+    </div> 
+   </section> 
+   <section id="tabs"> 
+    <div class="container"> 
+    </div> 
+   </section> 
+   <div class="main-container container"> 
+    <div class="row"> 
+     <section class="col-md-10"> 
+      <div class="region region-content"> 
+       <section id="block-system-main" class="block block-system clearfix"> 
+        <article id="ID_PAGINA" class="node node-page-canale clearfix" typeof="sioc:Item foaf:Document"> 
+         <header> 
+          <span property="dc:title" content="TITOLO DELLA PAGINA" class="rdf-meta element-hidden"></span> 
+         </header> 
+         <h2 class="title"> BARDH PRENKAJ</h2> Dottorando 
+         <br>
+         <br> 
+         <div class="field field-name-body field-type-text-with-summary field-label-hidden"> 
+          <div class="field-items"> 
+           <div class="field-item even" property="content:encoded"> 
+            <div class="row"> 
+             <div class="col-lg-3"> 
+             </div> 
+             <div class="col-lg-6"> 
+              <div class="row"> 
+               <div class="col-lg-12"> 
+                <strong>ciclo</strong>: XXXIV
+                <br> 
+                <strong>email</strong>: 
+                <br> 
+                <strong>telefono</strong>: 3482469706
+                <br> 
+                <strong>edificio</strong>: Via Salaria 113, terzo piano, stanza 333, 00198, Roma (RM)
+                <br> 
+               </div> 
+               <br>
+               <br>
+               <br> 
+               <div class="col-lg-12"> 
+                <br> 
+               </div> 
+              </div> 
+             </div> 
+             <div class="col-lg-3"></div> 
+            </div> 
+            <div class="row"> 
+             <div class="col-lg-12"></div> 
+            </div> 
+            <br> 
+            <strong>Produzione scientifica</strong>
+            <br>
+            <br> 
+            <div class="row"> 
+             <ul>
+              <li><a href="https://iris.uniroma1.it/handle/11573/1074047" target="_blank">11573/1074047</a> - 2017 - A Smart Peephole on the Cloud (04b Atto di convegno in volume)<br>De Marsico, Maria; NEMMI, EUGENIO NERIO; Prenkaj, Bardh; Saturni, Gabriele</li>
+              <li><a href="https://iris.uniroma1.it/handle/11573/1141410" target="_blank">11573/1141410</a> - 2018 - House in the (biometric) cloud: a possible application (01a Articolo in rivista)<br>De Marsico, Maria; Nemmi, Eugenio; Prenkaj, Bardh; Saturni, Gabriele</li>
+              <li><a href="https://iris.uniroma1.it/handle/11573/1313349" target="_blank">11573/1313349</a> - 2019 - MIMOSE: multimodal interaction for music orchestration sheet editors: An integrable multimodal music editor interaction system (01a Articolo in rivista)<br>Coletta A.; De Marsico M.; Panizzi E.; Prenkaj B.; Silvestri D.</li>
+             </ul> 
+            </div> 
+           </div> 
+          </div> 
+         </div> 
+        </article> 
+       </section> 
+      </div> 
+     </section> 
+     <input type="hidden" name="ctl00$cp1$incColonnaDestra$hfTipoPagina" id="ctl00_cp1_incColonnaDestra_hfTipoPagina" value="DOTTORANDO"> 
+     <input type="hidden" name="ctl00$cp1$incColonnaDestra$hfIdDottorato" id="ctl00_cp1_incColonnaDestra_hfIdDottorato"> 
+     <input type="hidden" name="ctl00$cp1$incColonnaDestra$hfAccount" id="ctl00_cp1_incColonnaDestra_hfAccount" value="1602894"> 
+     <aside class="col-md-2" role="complementary"> 
+      <div class="region region-sidebar-second"> 
+      </div> 
+     </aside> 
+    </div> 
+   </div> 
+   <section id="credits"> 
+    <div class="container"> 
+     <div class="row"> 
+      <div class="col-sm-6"> 
+       <div class="region region-credits-left"> 
+        <section id="block-block-24" class="block block-block clearfix"> 
+         <p>© Università degli Studi di Roma "La Sapienza" - Piazzale Aldo Moro 5, 00185 Roma</p> 
+        </section> 
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+   </section> 
+   <script>function euCookieComplianceLoadScripts() { }</script> 
+   <script>var eu_cookie_compliance_cookie_name = "";</script> 
+   <script src="js/js_UP4MkTIK4D_ABiQghJEsxyNiMBWKEYGFKlsio_4botA.js"></script> 
+  </form>   
+ </body>
+</html>

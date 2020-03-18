@@ -1,0 +1,967 @@
+https://twiki.di.uniroma1.it/twiki/view/Prog_avanzata/WebHome
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+ <head> 
+  <script type="text/javascript" src="/pub/TWiki/JQueryPlugin/jquery.js"></script> 
+  <script type="text/javascript" src="/pub/TWiki/JQueryPlugin/jquery-migrate.js"></script> 
+  <link rel="stylesheet" href="/pub/TWiki/JQueryPlugin/jquery-all.css" type="text/css" media="all"> 
+  <script type="text/javascript" src="/pub/TWiki/JQueryPlugin/jquery-all.js"></script> 
+  <title> WebHome &lt; Prog_avanzata &lt; TWiki</title> 
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+  <link rel="icon" href="https://twiki.di.uniroma1.it/pub/Main/TWikiPreferences/favicon.ico" type="image/x-icon"> 
+  <link rel="shortcut icon" href="https://twiki.di.uniroma1.it/pub/Main/TWikiPreferences/favicon.ico" type="image/x-icon"> 
+  <link rel="alternate" href="https://twiki.di.uniroma1.it/twiki/edit/Prog_avanzata/WebHome?t=1584543587" type="application/x-wiki" title="Edit WebHome"> 
+  <link rel="edit" href="https://twiki.di.uniroma1.it/twiki/edit/Prog_avanzata/WebHome?t=1584543587" title="Edit WebHome"> 
+  <meta name="SCRIPTURLPATH" content="/twiki"> 
+  <meta name="SCRIPTSUFFIX" content=""> 
+  <meta name="TEXT_JUMP" content="Jump"> 
+  <meta name="TEXT_SEARCH" content="Search"> 
+  <meta name="TEXT_NUM_TOPICS" content="Number of topics:"> 
+  <meta name="TEXT_MODIFY_SEARCH" content="Modify search"> 
+  <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="/twiki/view/Prog_avanzata/WebRss"> 
+  <base href="https://twiki.di.uniroma1.it/twiki/view/Prog_avanzata/WebHome"> 
+  <!--BEHAVIOURCONTRIB-->
+  <script type="text/javascript" src="/pub/TWiki/BehaviourContrib/behaviour.compressed.js"></script> 
+  <script type="text/javascript" src="/pub/TWiki/TWikiJavascripts/twikilib.js"></script> 
+  <script type="text/javascript" src="/pub/TWiki/TWikiJavascripts/twikiWindow.js"></script> 
+  <script type="text/javascript" src="/pub/TWiki/TWikiJavascripts/twikiEvent.js"></script> 
+  <script type="text/javascript" src="/pub/TWiki/TWikiJavascripts/twikiHTML.js"></script> 
+  <script type="text/javascript" src="/pub/TWiki/TWikiJavascripts/twikiCSS.js"></script> 
+  <script type="text/javascript" src="/pub/TWiki/TWikiJavascripts/twikiForm.js"></script> 
+  <script type="text/javascript" src="/pub/TWiki/PatternSkin/pattern.js"></script>
+  <style type="text/css" media="all">
+@import url('/pub/TWiki/TWikiTemplates/base.css');
+</style> 
+  <style type="text/css" media="all">
+
+#twTopBar
+{
+  z-index: 1;  /*** Critical value for Moz/Opera Background Column colors fudge to work ***/
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 80px; /* top bar height; make room for header columns */
+  background: #e4e9f0;
+}
+#twTopBar img,
+#twTopBar a,
+#twTopBar a:hover {
+  background-color: transparent;
+}
+
+#twTopBarButtons {
+  width: 165px;
+  height: 35px;
+  background-color: transparent;
+  background-image: url(/pub/TWiki/TopMenuSkin/action-button-area.gif);
+  background-repeat: no-repeat;
+}
+#twTopBarButtons ul {
+  padding: 0px;
+  margin: 0 0 0 10px;
+  list-style: none;
+}
+#twTopBarButtons ul li {
+  margin: 11px 5px 0 6px;
+  float: left;
+  font: 15px Tahoma, Arial;
+  width: 60px;
+  height: 24px;
+  text-align: center;
+  white-space: nowrap;
+  background-image: url(/pub/TWiki/TopMenuSkin/button-round-disabled.gif);
+  color: #888888;
+}
+#twTopBarButtons ul li a {
+  display: block;
+  margin: 0;
+  width: 60px;
+  height: 24px;
+  text-decoration: none;
+  background-image: url(/pub/TWiki/TopMenuSkin/button-round-normal.gif);
+  color: #333333;
+}
+#twTopBarButtons ul li a:hover {
+  background-color: transparent;
+  background-image: url(/pub/TWiki/TopMenuSkin/button-round-hover.gif);
+}
+
+#patternTopBar,
+#patternClearHeaderCenter,
+#patternClearHeaderLeft,
+#patternClearHeaderRight,
+#patternTopBarContentsOuter {
+  height: 80px; /* top bar height; make room for header columns */
+  overflow: hidden;
+}
+#patternOuter {
+  background: #fff;
+}
+
+#patternOuter {
+		  margin-left:14em;
+}
+#patternLeftBar {
+		  width:14em;
+		  margin-left:-14em;
+}
+</style> 
+  <style type="text/css" media="all">
+@import url('/pub/TWiki/PatternSkin/layout.css');
+@import url('/pub/TWiki/PatternSkin/style.css');
+@import url('/pub/TWiki/PatternSkin/colors.css');
+</style> 
+  <style type="text/css" media="all">
+	/* Styles that are set using variables */
+	.patternBookView .twikiTopRow,
+	.patternWebIndicator a img,
+	.patternWebIndicator a:hover img {
+		background-color:#D0D0D0;
+	}
+	
+	
+	.patternBookView {
+		border-color:#D0D0D0;
+	}
+	.patternPreviewPage #patternMain {
+		/* uncomment to set the preview image */
+		/*background-image:url("/pub/TWiki/PreviewBackground/preview2bg.gif");*/
+	}
+	
+</style>
+  <style type="text/css" media="all">
+@import url('https://twiki.di.uniroma1.it/pub/Main/TWikiPreferences/modifiche.css');
+
+
+</style> 
+  <style type="text/css" media="all">
+	@import url("/pub/TWiki/PatternSkin/print.css");
+</style> 
+  <!--[if IE]><style type="text/css" media="screen">
+pre {
+	overflow-x:auto;
+	padding-bottom:expression(this.scrollWidth > this.offsetWidth ? 16 : 0);
+}
+</style>
+<![endif]--> 
+  <!--[if lte IE 6]> 
+<style type="text/css">
+#patternLeftBar {
+	position:relative; /* IE 5.5 needs this or the contents won't show outside the parent container on print. IE 6.0 needs it only during printable copy! */
+}
+</style><![endif]--> 
+  <script type="text/javascript" src="/pub/TWiki/TWikiJavascripts/twikiStyles.js"></script> 
+  <!--GENERATED_HEADERS-->
+  <!-- TAGMEPLUGIN --> 
+  <style type="text/css" media="all">
+@import url("/pub/TWiki/TagMePlugin/tagme.css");
+</style> 
+  <!-- TWISTYPLUGIN_TWISTY --> 
+  <style type="text/css" media="all">
+@import url("https://twiki.di.uniroma1.it/pub/TWiki/TwistyContrib/twist.css");
+</style> 
+  <script type="text/javascript" src="https://twiki.di.uniroma1.it/pub/TWiki/BehaviourContrib/behaviour.compressed.js"></script> 
+  <script type="text/javascript" src="https://twiki.di.uniroma1.it/pub/TWiki/TWikiJavascripts/twikilib.js"></script> 
+  <script type="text/javascript" src="https://twiki.di.uniroma1.it/pub/TWiki/TWikiJavascripts/twikiPref.js"></script> 
+  <script type="text/javascript" src="https://twiki.di.uniroma1.it/pub/TWiki/TWikiJavascripts/twikiCSS.js"></script> 
+  <script type="text/javascript" src="https://twiki.di.uniroma1.it/pub/TWiki/TwistyContrib/twist.compressed.js"></script> 
+  <script type="text/javascript">
+// <![CDATA[
+var styleText = '<style type="text/css" media="all">.twikiMakeVisible{display:inline;}.twikiMakeVisibleInline{display:inline;}.twikiMakeVisibleBlock{display:block;}.twikiMakeHidden{display:none;}</style>';
+document.write(styleText);
+// ]]>
+</script> 
+  <!-- TOPMENUSKIN_CSS --> 
+  <style type="text/css" media="all">
+.twTopMenuTab
+{
+  height: 22px;
+  width: auto;
+  color: #111111;
+  background-image: url(/pub/TWiki/TopMenuSkin/menu-gray-bg.png);
+  background-repeat: repeat-x;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.twTopMenuTab ul
+{
+  height: 22px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.twTopMenuTab ul li
+{
+  float: left;
+  font: 13px Tahoma, Arial;
+  vertical-align: middle;
+  width: auto;
+  white-space: nowrap;
+}
+.twTopMenuTab ul li a
+{
+  display: block;
+  padding: 2px 8px 3px 8px;
+  text-decoration: none;
+  color: #111111;
+}
+.twTopMenuTab ul li a:hover
+{
+  background-image: url(/pub/TWiki/TopMenuSkin/menu-reverse-bg.png);
+  color: #111111;
+  text-decoration: none;
+}
+.twTopMenuTab ul li ul
+{
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  visibility: hidden;
+  border-top: 1px solid white;
+  color: #111111;
+  z-index: 9000;
+}
+.twTopMenuTab ul li ul li
+{
+  float: none;
+  display: inline;
+}
+.twTopMenuTab ul li ul li a
+{
+  width: auto;
+  background-color: #F7F8F8;
+  background-image: url(/pub/TWiki/TopMenuSkin/menu-pulldown-bg.png);
+  background-repeat: repeat-y;
+  padding: 3px 8px;
+}
+.twTopMenuTab ul li ul li a:hover
+{
+  background-color: #AFB3C5;
+  background-repeat: repeat;
+}
+</style>
+ </head> 
+ <body class="patternViewPage"> 
+  <a name="PageTop"></a> 
+  <div id="patternScreen"> 
+   <div id="patternPageShadow"> 
+    <div id="patternPage"> 
+     <div id="patternWrapper">
+      <div id="patternOuter"> 
+       <div id="patternFloatWrap"> 
+        <div id="patternMain">
+         <div id="patternClearHeaderCenter"></div> 
+         <div id="patternMainContents">
+          <div class="twikiContentHeader">
+           <div class="tagmetags hideInPrint">
+             Tags: 
+            <form name="tagmeshow" style="display:inline" action="https://twiki.di.uniroma1.it/twiki/viewauth/Prog_avanzata/WebHome" method="post">
+             <input type="hidden" name="crypttoken" value="eb951181a17fbe5f6bdc5e1e65e710b2">
+             <span class="tagMeControl"><span id="tagMeSelect717"></span><span id="tagmeAddNewButton" style="display:none;"><input type="hidden" name="tpaction" value="add"><input type="image" src="/pub/TWiki/TagMePlugin/tag_addnew.gif" class="tag_addnew" name="add" alt="Select tag and add to topic" value="Select tag and add to topic" title="Select tag and add to topic"></span><script type="text/javascript" language="javascript">
+//<![CDATA[
+function createSelectBox(inText, inElemId) {
+	var selectBox = document.createElement('SELECT');
+	selectBox.name = "tag";
+	selectBox.className = "twikiSelect";
+	document.getElementById(inElemId).appendChild(selectBox);
+	var items = inText.split("#");
+	var i, ilen = items.length;
+	for (i=0; i<ilen; ++i) {
+		selectBox.options[i] = new Option(items[i], items[i]);
+	}
+}
+var text="#fdp-eserc";
+if (text.length > 0) {createSelectBox(text, "tagMeSelect717"); document.getElementById("tagmeAddNewButton").style.display="inline";}
+//]]>
+</script></span>
+             <noscript>
+              <a rel="nofollow" href="https://twiki.di.uniroma1.it/twiki/viewauth/Prog_avanzata/WebHome?tagmode=nojavascript">tag this topic</a>
+             </noscript> 
+             <span class="tagMeControl"><a rel="nofollow" href="https://twiki.di.uniroma1.it/twiki/viewauth/TWiki/TagMeCreateNewTag?from=Prog_avanzata.WebHome">create new tag</a></span>
+            </form> 
+            <a href="/twiki/view/TWiki/TagMeViewAllTags" class="twikiLink">view all tags</a> 
+           </div>
+          </div>
+          <div class="patternContent">
+           <div class="patternTopic"> 
+            <div style="background-color:#F0FFFF"> 
+             <p></p> 
+             <hr> 
+             <hr> 
+             <p></p> 
+             <h1><a name="Programmazione_Avanzata"></a> Programmazione Avanzata </h1> 
+             <p></p> 
+             <h3><a name="Corso_di_Laurea_Specialistica_in"></a> Corso di Laurea Specialistica in Informatica </h3> 
+             <p></p> 
+             <h3><a name="Stefano_Guerrini"></a> <a href="/twiki/view/Users/StefanoGuerrini" class="twikiLink">Stefano Guerrini</a> </h3> 
+             <p></p> 
+             <hr> 
+             <p></p> 
+             <big> Vai alla pagina dell'A.A. 2007-08 <a class="twikiLink" href="/twiki/view/Prog_avanzata/AnnoAcc0708"> <img src="https://twiki.di.uniroma1.it/pub/TWiki/TWikiDocGraphics/hand.gif" alt="hand.gif"> </a> </big> 
+             <p></p> Vai alla pagina del corso tenuto nell'A.A. 2005-06 
+             <a class="twikiLink" href="/twiki/view/Prog_avanzata/AnnoAcc0506"> <img alt="hand.gif" src="https://twiki.di.uniroma1.it/pub/TWiki/TWikiDocGraphics/hand.gif"> </a> 
+             <p></p> 
+             <hr> 
+             <hr> 
+             <p></p> 
+             <div class="twikiToc"> 
+              <ul> 
+               <li> <a href="#Programmazione_Avanzata">Programmazione Avanzata</a> 
+                <ul> 
+                 <li> 
+                  <ul> 
+                   <li> <a href="#Corso_di_Laurea_Specialistica_in">Corso di Laurea Specialistica in Informatica</a> </li> 
+                   <li> <a href="#Stefano_Guerrini">Stefano Guerrini</a> </li>
+                  </ul> </li> 
+                 <li> <a href="#Obiettivi"> Obiettivi</a> </li> 
+                 <li> <a href="#Contenuti"> Contenuti</a> </li> 
+                 <li> <a href="#Programma"> Programma</a> </li> 
+                 <li> <a href="#Lezioni_materiale_didattico_rice"> Lezioni, materiale didattico, ricevimento, esami.</a> </li> 
+                 <li> <a href="#Pagine_del_Corso"> Pagine del Corso</a> </li>
+                </ul> </li>
+              </ul> 
+             </div> 
+             <p></p> 
+             <hr> 
+             <p></p> 
+             <strong>N.B.</strong> Il corso di Programmazione Avanzata è tenuto ad anni alterni da Stefano Guerrini (2005-06, 2007-08) e Paolo Bottoni (2004-05). Questa pagina contiene informazioni relative al corso del prof. Stefano Guerrini. 
+             <p></p> 
+             <hr> 
+             <p></p> 
+             <h2><a name="Obiettivi"></a> Obiettivi </h2> 
+             <p></p> Lo scopo del corso è sviluppare e approfondire, anche e soprattutto attraverso la loro implementazione, tecniche e argomenti avanzati di programmazione che non sono coperti nei corsi di base. Per questo motivo, il corso è il naturale proseguimento/approfondimento dei corsi di programmazione a oggetti, compilatori e linguaggi di programmazione. 
+             <p></p> Per quanto riguarda l'implementazione dei linguaggi di programmazione, il corso si pone un duplice obiettivo: da una parte vuole mettere lo studente in grado di usare le più moderne tecniche di progettazione e implementazione di interpreti e compilatori; dall'altra parte, mediante l'approfondimento delle moderne tecniche di implementazione, vuole mettere lo studente in grado di conoscere e sfruttare al meglio le caratteristiche dei linguaggi e dei paradigmi di programmazione. 
+             <p></p> Per quanto riguarda le tecniche di programmazione, il corso vuole presentare alcuni tra i più recenti e innovativi approcci, fornendo le conoscenze di base su argomenti quali design patterns, generici, metaprogrammazione, partial evaluation, generative programming, extreme programming. 
+             <p></p> 
+             <p></p> 
+             <h2><a name="Contenuti"></a> Contenuti </h2> 
+             <p></p> 
+             <ul> 
+              <li> Macchine astratte, linguaggi, interpretazione, compilazione </li>
+             </ul> 
+             <p></p> 
+             <ul> 
+              <li> Richiami di semantica dei linguaggi di programmazione </li>
+             </ul> 
+             <p></p> 
+             <ul> 
+              <li> Implementazione dei Linguaggi di Programmazione 
+               <ul> 
+                <li> Tipi di dato </li> 
+                <li> Controllo di sequenza: espressioni e comandi </li> 
+                <li> Blocchi e ambiente locale </li> 
+                <li> Sottoprogrammi </li> 
+                <li> Passaggio dei parametri </li> 
+                <li> Classi e oggetti </li> 
+                <li> Implementazione dell'ambiente e gestione dinamica della memoria </li> 
+                <li> Garbage collection </li>
+               </ul> </li>
+             </ul> 
+             <p></p> 
+             <ul> 
+              <li> Tecniche avanzate di programmazione 
+               <ul> 
+                <li> Design patterns </li> 
+                <li> Tipi di dato generici </li> 
+                <li> Metaprogrammazione </li> 
+                <li> Partial evaluation </li> 
+                <li> Generative programming </li> 
+                <li> Extreme programming </li>
+               </ul> </li>
+             </ul> 
+             <p></p> 
+             <h2><a name="Programma"></a> Programma </h2> 
+             <p></p> Vedi la 
+             <a href="/twiki/view/Prog_avanzata/AnnoAcc0708#Programma" class="twikiAnchorLink">pagina dell'anno accademico corrente</a>. 
+             <p></p> 
+             <p></p> 
+             <h2><a name="Lezioni_materiale_didattico_rice"></a> Lezioni, materiale didattico, ricevimento, esami. </h2> 
+             <p></p> Per informazioni dettagliate su orario e luogo delle lezioni, materiale didattico, ricevimento, argomenti affrontati nelle lezioni, prove di esame, etc., visitare la 
+             <a href="/twiki/view/Prog_avanzata/AnnoAcc0708" class="twikiLink">pagina dell'anno accademico corrente</a>. 
+             <p></p> 
+             <p></p> 
+             <h2><a name="Pagine_del_Corso"></a> Pagine del Corso </h2> 
+             <p></p> 
+             <ul> 
+              <li> <a href="/twiki/view/Prog_avanzata/AnnoAcc0506" class="twikiLink">Pagina principale A.A. 2005-06</a> </li> 
+              <li> <a href="/twiki/view/Prog_avanzata/AnnoAcc0708" class="twikiLink">Pagina principale A.A. 2007-08</a> </li>
+             </ul> 
+             <p></p> 
+             <p></p> 
+             <hr> 
+             <p></p> -- 
+             <a href="/twiki/view/Users/StefanoGuerrini" class="twikiLink">StefanoGuerrini</a> - 24 Apr 2005 
+             <p></p> 
+            </div> 
+           </div>
+           <!-- /patternTopic--> 
+           <div class="twikiContentFooter"></div>
+          </div>
+          <!-- /patternContent--> 
+          <div class="clear"></div> 
+          <a name="topic-actions"></a>
+          <div class="patternTopicActions">
+           <div class="patternTopicAction">
+            <span class="patternActionButtons"><span style=""><span><a href="https://twiki.di.uniroma1.it/twiki/edit/Prog_avanzata/WebHome?t=1584543587;nowysiwyg=0" rel="nofollow" title="Edit this topic text" accesskey="e"><img src="/pub/TWiki/TWikiDocGraphics/uweb-o14.gif" width="14" height="14" border="0" alt=""> <span class="twikiAccessKey">E</span>dit</a></span><span class="twikiSeparator">&nbsp;|&nbsp;</span></span><span style=""><span><a href="/twiki/attach/Prog_avanzata/WebHome" rel="nofollow" title="Attach an image or document to this topic" accesskey="a"><span class="twikiAccessKey">A</span>ttach</a></span><span class="twikiSeparator">&nbsp;|&nbsp;</span></span><span>
+              <strike>
+               Watch
+              </strike></span><span class="twikiSeparator">&nbsp;|&nbsp;</span><span><a href="/twiki/view/Prog_avanzata/WebHome?cover=print" rel="nofollow" title="Printable version of this topic" accesskey="p"><span class="twikiAccessKey">P</span>rint version</a></span><span class="twikiSeparator">&nbsp;|&nbsp;</span><span><span><a href="/twiki/rdiff/Prog_avanzata/WebHome?type=history" rel="nofollow" title="View total topic history" accesskey="h"><span class="twikiAccessKey">H</span>istory</a></span>: r14&nbsp;<a href="/twiki/rdiff/Prog_avanzata/WebHome?rev1=14;rev2=13" rel="nofollow">&lt;</a>&nbsp;<a rel="nofollow" href="/twiki/view/Prog_avanzata/WebHome?rev=13">r13</a>&nbsp;<a rel="nofollow" href="/twiki/rdiff/Prog_avanzata/WebHome?rev1=13;rev2=12">&lt;</a>&nbsp;<a href="/twiki/view/Prog_avanzata/WebHome?rev=12" rel="nofollow">r12</a>&nbsp;<a rel="nofollow" href="/twiki/rdiff/Prog_avanzata/WebHome?rev1=12;rev2=11">&lt;</a>&nbsp;<a rel="nofollow" href="/twiki/view/Prog_avanzata/WebHome?rev=11">r11</a>&nbsp;<a rel="nofollow" href="/twiki/rdiff/Prog_avanzata/WebHome?rev1=11;rev2=10">&lt;</a>&nbsp;<a rel="nofollow" href="/twiki/view/Prog_avanzata/WebHome?rev=10">r10</a></span><span class="twikiSeparator">&nbsp;|&nbsp;</span><span><a href="/twiki/oops/Prog_avanzata/WebHome?template=backlinksweb" rel="nofollow" title="Search the Prog_avanzata Web for topics that link to here" accesskey="b"><span class="twikiAccessKey">B</span>acklinks</a></span><span class="twikiSeparator">&nbsp;|&nbsp;</span><span><a href="/twiki/view/Prog_avanzata/WebHome?raw=on" rel="nofollow" title="View raw text without formatting" accesskey="r"><span class="twikiAccessKey">R</span>aw View</a></span><span class="twikiSeparator">&nbsp;|&nbsp;</span><span style=""><span><a href="https://twiki.di.uniroma1.it/twiki/edit/Prog_avanzata/WebHome?t=1584543587;nowysiwyg=1" rel="nofollow" title="Raw Edit this topic text" accesskey="w">Ra<span class="twikiAccessKey">w</span> edit</a></span><span class="twikiSeparator">&nbsp;|&nbsp;</span></span><span><a href="/twiki/oops/Prog_avanzata/WebHome?template=oopsmore&amp;param1=14&amp;param2=14" rel="nofollow" title="Delete or rename this topic; set parent topic; view and compare revisions" accesskey="m"><span class="twikiAccessKey">M</span>ore topic actions</a></span></span>
+           </div>
+           <!--/patternTopicAction-->
+          </div>
+          <!--/patternTopicActions--> 
+          <div class="patternInfo twikiGrayText">
+           <div class="patternRevInfo">
+            Topic revision: r14 - 2008-02-29 
+            <a href="https://twiki.di.uniroma1.it/twiki/edit/Prog_avanzata/WebHome?t=1584543587;nowysiwyg=1" target="_top">-</a> 
+            <a href="/twiki/view/Users/StefanoGuerrini" class="twikiLink">StefanoGuerrini</a>
+           </div>
+           <!-- /patternRevInfo-->
+          </div>
+          <!-- /patternInfo--> 
+         </div>
+         <!-- /patternMainContents--> 
+        </div>
+        <!-- /patternMain-->
+        <div id="patternLeftBar">
+         <div id="patternClearHeaderLeft"></div> 
+         <div id="patternLeftBarContents"> 
+          <div class="patternLeftBarPersonal"> 
+           <ul>
+            <li class="patternLogIn"><a href="/twiki/login/Prog_avanzata/WebHome?origurl=/twiki/view/Prog_avanzata/WebHome">Log In</a> or <a href="/twiki/view/TWiki/TWikiRegistration" class="twikiLink">Register</a></li>
+           </ul> 
+          </div>
+          <!--/patternLeftBarPersonal--> 
+          <ul> 
+           <li> <span class="twistyPlugin twikiMakeVisibleInline"> <span id="weblisttoolsshow" class="twistyTrigger twikiUnvisited twistyHidden twistyInited"><a href="#"><img src="/pub/TWiki/TWikiDocGraphics/toggleopen.gif" border="0" alt=""><span class="twikiLinkLabel twikiUnvisited"><b>Prog_avanzata Web ...</b></span></a> </span> </span>
+            <!--/twistyPlugin twikiMakeVisibleInline--> <span class="twistyPlugin twikiMakeVisibleInline"> <span id="weblisttoolshide" class="twistyTrigger twikiUnvisited twistyHidden twistyInited"><a href="#"><img src="/pub/TWiki/TWikiDocGraphics/toggleclose.gif" border="0" alt=""><span class="twikiLinkLabel twikiUnvisited"><b>Prog_avanzata Web</b></span></a> </span> </span>
+            <!--/twistyPlugin twikiMakeVisibleInline--> </li>
+          </ul> 
+          <div class="twistyPlugin">
+           <div id="weblisttoolstoggle" class="twistyRememberSetting twistyContent twikiMakeHidden twistyInited"> 
+            <ul> 
+             <li> <b><a href="/twiki/view/Prog_avanzata/WebHome" class="twikiCurrentTopicLink twikiCurrentWebHomeLink twikiLink"> <img src="/pub/TWiki/TWikiDocGraphics/home.gif" width="16" height="16" alt="Home" title="Home" border="0"> Prog_avanzata Web Home</a></b> </li> 
+             <li> <a href="/twiki/view/Users/TWikiUsers" class="twikiLink"> <img src="/pub/TWiki/TWikiDocGraphics/person.gif" width="16" height="16" alt="Person" title="Person" border="0"> Users</a> </li> 
+             <li> <a href="/twiki/view/Users/TWikiGroups" class="twikiLink"> <img src="/pub/TWiki/TWikiDocGraphics/group.gif" width="16" height="16" alt="Group" title="Group" border="0"> Groups</a> </li> 
+             <li> <a href="/twiki/view/Prog_avanzata/WebTopicList" class="twikiLink"> <img src="/pub/TWiki/TWikiDocGraphics/index.gif" width="16" height="16" alt="Index" title="Index" border="0"> Index</a> </li> 
+             <li> <a href="/twiki/view/Prog_avanzata/WebSearch" class="twikiLink"> <img src="/pub/TWiki/TWikiDocGraphics/searchtopic.gif" width="16" height="16" alt="Search topic" title="Search topic" border="0"> Search</a> </li> 
+             <li> <a class="twikiLink" href="/twiki/view/Prog_avanzata/WebChanges"> <img src="/pub/TWiki/TWikiDocGraphics/changes.gif" width="16" height="16" alt="Changes" title="Changes" border="0"> Changes</a> </li> 
+             <li> <a class="twikiLink" href="/twiki/view/Prog_avanzata/WebNotify"> <img src="/pub/TWiki/TWikiDocGraphics/notify.gif" width="16" height="16" alt="Notify" title="Notify" border="0"> Notifications</a> <br> <a href="https://twiki.di.uniroma1.it/twiki/view/Prog_avanzata/WebRss"><img src="https://twiki.di.uniroma1.it/pub/TWiki/TWikiDocGraphics/Icon-RSS.gif" alt="Iscriviti al feed RSS" title="Iscriviti al feed RSS"></a> <a href="https://twiki.di.uniroma1.it/twiki/view/Prog_avanzata/WebAtom"><img src="https://twiki.di.uniroma1.it/pub/TWiki/TWikiDocGraphics/icon-atom.gif" alt="Iscriviti al feed Atom" title="Iscriviti al feed Atom"></a> </li> 
+             <li> <a class="twikiLink" href="/twiki/view/Prog_avanzata/WebStatistics"> <img src="/pub/TWiki/TWikiDocGraphics/statistics.gif" width="16" height="16" alt="Statistics" title="Statistics" border="0"> Statistics</a> </li> 
+             <li> <a class="twikiLink" href="/twiki/view/Prog_avanzata/WebPreferences"> <img src="/pub/TWiki/TWikiDocGraphics/wrench.gif" width="16" height="16" alt="Wrench, tools" title="Wrench, tools" border="0"> Preferences</a> </li>
+            </ul> 
+           </div>
+          </div> 
+          <!--/twistyPlugin--> 
+          <hr> 
+          <ul> 
+           <li> <span class="twistyPlugin twikiMakeVisibleInline"> <span id="weblistdocsshow" class="twistyTrigger twikiUnvisited twistyHidden twistyInited"><a href="#"><img src="/pub/TWiki/TWikiDocGraphics/toggleopen.gif" border="0" alt=""><span class="twikiLinkLabel twikiUnvisited"><b>User Reference ...</b></span></a> </span> </span>
+            <!--/twistyPlugin twikiMakeVisibleInline--> <span class="twistyPlugin twikiMakeVisibleInline"> <span id="weblistdocshide" class="twistyTrigger twikiUnvisited twistyHidden twistyInited"><a href="#"><img src="/pub/TWiki/TWikiDocGraphics/toggleclose.gif" border="0" alt=""><span class="twikiLinkLabel twikiUnvisited"><b>User Reference</b></span></a> </span> </span>
+            <!--/twistyPlugin twikiMakeVisibleInline--> </li>
+          </ul> 
+          <div class="twistyPlugin">
+           <div id="weblistdocstoggle" class="twistyRememberSetting twistyContent twikiMakeHidden twistyInited"> 
+            <ul> 
+             <li> <a href="/twiki/view/TWiki/ATasteOfTWiki" class="twikiLink">ATasteOfTWiki</a> </li> 
+             <li> <a href="/twiki/view/TWiki/TextFormattingRules" class="twikiLink">TextFormattingRules</a> </li> 
+             <li> <a class="twikiLink" href="/twiki/view/TWiki/TWikiVariables">TWikiVariables</a> </li> 
+             <li> <a class="twikiLink" href="/twiki/view/TWiki/FormattedSearch">FormattedSearch</a> </li> 
+             <li> <a class="twikiLink" href="/twiki/view/TWiki/TWikiDocGraphics">TWikiDocGraphics</a> </li> 
+             <li> <a href="/twiki/view/TWiki/TWikiSkinBrowser" class="twikiLink">TWikiSkinBrowser</a> </li> 
+             <li> <a href="/twiki/view/TWiki/InstalledPlugins" class="twikiLink">InstalledPlugins</a> </li>
+            </ul> 
+            <p></p> 
+            <ul> 
+             <li> <a href="/twiki/view/TWiki/ChangeEmailAddress" class="twikiLink">ChangeEmailAddress</a> </li> 
+             <li> <a href="/twiki/view/TWiki/ChangePassword" class="twikiLink">ChangePassword</a> </li> 
+             <li> <a href="/twiki/view/TWiki/ResetPassword" class="twikiLink">ResetPassword</a> </li>
+            </ul> 
+           </div>
+          </div> 
+          <!--/twistyPlugin--> 
+          <hr> 
+          <ul> 
+           <li> <strong><a class="twikiLink" href="/twiki/view/Prenotazioni/WebHome">Prenotazioni esami</a></strong> 
+            <hr> </li> 
+           <li> <span class="twistyPlugin twikiMakeVisibleInline"> <span id="weblisttriennaleshow" class="twistyTrigger twikiUnvisited twistyHidden twistyInited"><a href="#"><img src="/pub/TWiki/TWikiDocGraphics/toggleopen.gif" border="0" alt=""><span class="twikiLinkLabel twikiUnvisited"> <strong>Laurea Triennale ...</strong> </span></a> </span> </span>
+            <!--/twistyPlugin twikiMakeVisibleInline--> <span class="twistyPlugin twikiMakeVisibleInline"> <span id="weblisttriennalehide" class="twistyTrigger twikiUnvisited twistyHidden twistyInited"><a href="#"><img src="/pub/TWiki/TWikiDocGraphics/toggleclose.gif" border="0" alt=""><span class="twikiLinkLabel twikiUnvisited"> <strong>Laurea Triennale</strong> </span></a> </span> </span>
+            <!--/twistyPlugin twikiMakeVisibleInline--> </li>
+          </ul> 
+          <div class="twistyPlugin">
+           <div id="weblisttriennaletoggle" class="twistyRememberSetting twistyContent twikiMakeHidden twistyInited"> 
+            <ul> 
+             <li> <a href="/twiki/view/Algebra/WebHome" class="twikiLink">Algebra</a> <a class="twikiLink" href="/twiki/view/Algebra/WebRss?skin=rss"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a> </li> 
+             <li> Algoritmi 
+              <ul> 
+               <li> <a href="/twiki/view/Intro_algo/WebHome" class="twikiLink">Introduzione agli algoritmi</a> <a class="twikiLink" href="/twiki/view/Intro_algo/WebRss?skin=rss"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a> </li> 
+               <li> <a href="/twiki/view/Algoritmi1/WebHome" class="twikiLink">Algoritmi 1</a> <a class="twikiLink" href="/twiki/view/Algoritmi1/WebRss?skin=rss"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a> </li> 
+               <li> <a class="twikiLink" href="/twiki/view/Algoritmi2/WebHome">Algoritmi 2</a> <a href="/twiki/view/Algoritmi2/WebRss?skin=rss" class="twikiLink"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a> </li> 
+               <li> <a href="/twiki/view/Algoritmi_vis/WebHome" class="twikiLink">Algoritmi per la<br> visualizzazione</a> <a class="twikiLink" href="/twiki/view/Algoritmi_vis/WebRss?skin=rss"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a> </li>
+              </ul> </li> 
+             <li> Architetture 
+              <ul> 
+               <li> <a href="/twiki/view/Architetture1/WebHome" class="twikiLink">Prog. sist. digitali</a> </li> 
+               <li> <a href="/twiki/view/Architetture2/WebHome" class="twikiLink">Architetture 2</a> </li>
+              </ul> </li>
+            </ul> 
+            <!--      * <a href="/twiki/view/Arc2appunti/WebHome" class="twikiLink">Appunti</a> --> 
+            <ul> 
+             <li> Basi di Dati 
+              <ul> 
+               <li> <a href="/twiki/view/BD1Inf/WebHome" class="twikiLink">Basi di Dati 1 Inf.</a> <a href="/twiki/view/BD1Inf/WebRss?skin=rss" class="twikiLink"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a> </li> 
+               <li> <a href="/twiki/view/BD1/WebHome" class="twikiLink">Basi di Dati 1 T.I.</a> <a href="/twiki/view/BD1/WebRss?skin=rss" class="twikiLink"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a> </li> 
+               <li> <a href="/twiki/view/BD1/WebHome" class="twikiLink">Basi di Dati (I modulo, A-L)</a> <a class="twikiLink" href="/twiki/view/BD1/WebRss?skin=rss"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a> </li> 
+               <li> <a class="twikiLink" href="/twiki/view/BD1/MZ/WebHome">Basi di Dati (I modulo, M-Z)</a> <a href="/twiki/view/BD1/MZ/WebRss?skin=rss" class="twikiLink"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a> </li> 
+               <li> <a class="twikiLink" href="/twiki/view/BD2/WebHome">Basi di Dati 2</a> <a href="/twiki/view/BD2/WebRss?skin=rss" class="twikiLink"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a> </li>
+              </ul> </li> 
+             <li> Calcolo 
+              <ul> 
+               <li> <a class="twikiLink" href="/twiki/view/Calcolo_diff/WebHome">Calcolo differenziale</a> <a class="twikiLink" href="/twiki/view/Calcolo_diff/WebRss?skin=rss"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a> </li> 
+               <li> <a href="/twiki/view/Calcolo_int/WebHome" class="twikiLink">Calcolo integrale</a> <a class="twikiLink" href="/twiki/view/Calcolo_int/WebRss?skin=rss"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a> </li> 
+               <li> <a href="/twiki/view/CP/WebHome" class="twikiLink">Calcolo delle Probabilità</a> <a href="/twiki/view/CP/WebRss?skin=rss" class="twikiLink"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a> </li>
+              </ul> </li> 
+             <li> Metodi mat. per l'inf. (ex. Logica) 
+              <ul> 
+               <li> <a href="/twiki/view/Logica_AD/WebHome" class="twikiLink">canale AD</a> <a class="twikiLink" href="/twiki/view/Logica_AD/WebRss?skin=rss"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a> </li> 
+               <li> <a class="twikiLink" href="/twiki/view/Logica_PZ/WebHome">canale PZ</a> <a class="twikiLink" href="/twiki/view/Logica_PZ/WebRss?skin=rss"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a> </li>
+              </ul> </li> 
+             <li> Programmazione 
+              <ul> 
+               <li> <a href="/twiki/view/Programmazione1/WebHome" class="twikiLink">Fond. di Programmazione</a> </li> 
+               <li> <a class="twikiLink" href="/twiki/view/Metod_prog/WebHome">Metodologie di Programmazione</a> </li> 
+               <li> <a href="/twiki/view/PSMC/WebHome" class="twikiLink">Prog. di sistemi multicore</a> <a href="/twiki/view/PSMC/WebRss?skin=rss" class="twikiLink"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a> </li> 
+               <li> Programmazione 2 
+                <ul> 
+                 <li> <a href="/twiki/view/Programmazione2ad/WebHome" class="twikiLink">AD</a> <a href="/twiki/view/Programmazione2ad/WebRss?skin=rss" class="twikiLink"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a> </li> 
+                 <li> <a href="/twiki/view/Programmazione2eo/WebHome" class="twikiLink">EO</a> <a class="twikiLink" href="/twiki/view/Programmazione2eo/WebRss?skin=rss"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a> </li> 
+                 <li> <a href="/twiki/view/Programmazione2pz/WebHome" class="twikiLink">PZ</a> <a class="twikiLink" href="/twiki/view/Programmazione2pz/WebRss?skin=rss"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a> </li> 
+                 <li> <a href="/twiki/view/Es_prog2/WebHome" class="twikiLink">Esercitazioni Prog. 2</a> <a href="/twiki/view/Es_prog2/WebRss?skin=rss" class="twikiLink"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a> </li> 
+                 <li> <a class="twikiLink" href="/twiki/view/Labprog2/AD/WebHome">Lab. Prog. AD</a> <a class="twikiLink" href="/twiki/view/Labprog2/AD/WebRss?skin=rss"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a> </li> 
+                 <li> <a href="/twiki/view/Labprog2/EO/WebHome" class="twikiLink">Lab. Prog. EO</a> <a class="twikiLink" href="/twiki/view/Labprog2/EO/WebRss?skin=rss"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a> </li> 
+                 <li> <a class="twikiLink" href="/twiki/view/Labprog2/WebHome">Lab. Prog. 2</a> <a class="twikiLink" href="/twiki/view/Labprog2/WebRss?skin=rss"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a> </li>
+                </ul> </li> 
+               <li> <a href="/twiki/view/PO/WebHome" class="twikiLink">Prog. a Oggetti</a> <a class="twikiLink" href="/twiki/view/PO/WebRss?skin=rss"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a> </li>
+              </ul> </li> 
+             <li> Reti 
+              <ul> 
+               <li> <a class="twikiLink" href="/twiki/view/Reti_elab/AL/WebHome">Arch. di internet</a> <a href="/twiki/view/Reti_elab/AL/WebRss?skin=rss" class="twikiLink"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a> </li> 
+               <li> <a href="/twiki/view/Lab_prog_rete/WebHome" class="twikiLink">Lab. di prog. di rete</a> <a class="twikiLink" href="/twiki/view/Lab_prog_rete/WebRss?skin=rss"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a> </li> 
+               <li> <a href="/twiki/view/PW/WebHome" class="twikiLink">Programmazione Web</a> <a class="twikiLink" href="/twiki/view/PW/WebRss?skin=rss"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a> </li> 
+               <li> <a href="/twiki/view/Reti_elab/WebHome" class="twikiLink">Reti di elaboratori</a> </li>
+              </ul> </li> 
+             <li> Sistemi operativi 
+              <ul> 
+               <li> <a href="/twiki/view/SO/SO1213AL/SistemiOperativi12CFU" class="twikiLink">Sistemi Operativi (12 CFU)</a> </li> 
+               <li> Anni precedenti 
+                <ul> 
+                 <li> <a href="/twiki/view/Sistemioperativi1/WebHome" class="twikiLink">Sistemi operativi 1</a> <a href="/twiki/view/Sistemioperativi1/WebRss?skin=rss" class="twikiLink"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a> </li> 
+                 <li> <a class="twikiLink" href="/twiki/view/Sistemioperativi2/WebHome">Sistemi operativi 2</a> <a class="twikiLink" href="/twiki/view/Sistemioperativi2/WebRss?skin=rss"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a> </li> 
+                 <li> <a href="/twiki/view/Lab_so_1/WebHome" class="twikiLink">Lab. SO 1</a> <a href="/twiki/view/Lab_so_1/WebRss?skin=rss" class="twikiLink"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a> </li> 
+                 <li> <a class="twikiLink" href="/twiki/view/Lab_so_2/WebHome">Lab. SO 2</a> <a class="twikiLink" href="/twiki/view/Lab_so_2/WebRss?skin=rss"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a> </li>
+                </ul> </li>
+              </ul> </li> 
+             <li> Altri corsi 
+              <ul> 
+               <li> <a class="twikiLink" href="/twiki/view/Calcolabilita/WebHome">Automi, Calcolabilità<br> e Complessità</a> <a href="/twiki/view/Calcolabilita/WebRss?skin=rss" class="twikiLink"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a> </li> 
+               <li> <a href="/twiki/view/ApprAuto/WebHome" class="twikiLink">Apprendimento Automatico</a> <a class="twikiLink" href="/twiki/view/ApprAuto/WebRss?skin=rss"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a> </li> 
+               <li> <a class="twikiLink" href="/twiki/view/Economia_az/WebHome">Economia Aziendale</a> <a class="twikiLink" href="/twiki/view/Economia_az/WebRss?skin=rss"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a> </li> 
+               <li> <a class="twikiLink" href="/twiki/view/Elab_immagini/WebHome">Elaborazione Immagini</a> <a href="/twiki/view/Elab_immagini/WebRss?skin=rss" class="twikiLink"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a> </li> 
+               <li> <a href="/twiki/view/Fisica2/WebHome" class="twikiLink">Fisica 2</a> <a class="twikiLink" href="/twiki/view/Fisica2/WebRss?skin=rss"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a> </li> 
+               <li> <a href="/twiki/view/Grafica3d/WebHome" class="twikiLink">Grafica 3D</a> <a class="twikiLink" href="/twiki/view/Grafica3d/WebRss?skin=rss"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a> </li> 
+               <li> <a class="twikiLink" href="/twiki/view/Inf_giuridica/WebHome">Informatica Giuridica</a> <a class="twikiLink" href="/twiki/view/Inf_giuridica/WebRss?skin=rss"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a> </li> 
+               <li> <a href="/twiki/view/Lab_sis_int/WebHome" class="twikiLink">Laboratorio di Sistemi Interattivi</a> <a class="twikiLink" href="/twiki/view/Lab_sis_int/WebRss?skin=rss"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a> </li> 
+               <li> <a class="twikiLink" href="/twiki/view/LDPMat/WebHome">Linguaggi di Programmazione 3° anno Matematica</a> <a class="twikiLink" href="/twiki/view/LDPMat/WebRss?skin=rss"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a> </li> 
+               <li> <a href="/twiki/view/LC/WebHome" class="twikiLink">Linguaggi e Compilatori</a> <a class="twikiLink" href="/twiki/view/LC/WebRss?skin=rss"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a> </li> 
+               <li> <a href="/twiki/view/Sistemi_inf/WebHome" class="twikiLink">Sistemi Informativi</a> <a class="twikiLink" href="/twiki/view/Sistemi_inf/WebRss?skin=rss"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a> </li> 
+               <li> <a class="twikiLink" href="/twiki/view/TSS/WebHome">Tecniche di Sicurezza dei Sistemi</a> <a href="/twiki/view/TSS/WebRss?skin=rss" class="twikiLink"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a> </li>
+              </ul> </li>
+            </ul> 
+           </div>
+          </div> 
+          <!--/twistyPlugin--> 
+          <hr> 
+          <ul> 
+           <li> <span class="twistyPlugin twikiMakeVisibleInline"> <span id="weblistmagistraleshow" class="twistyTrigger twikiUnvisited twistyHidden twistyInited"><a href="#"><img src="/pub/TWiki/TWikiDocGraphics/toggleopen.gif" border="0" alt=""><span class="twikiLinkLabel twikiUnvisited"> <strong>Laurea Magistrale ...</strong> </span></a> </span> </span>
+            <!--/twistyPlugin twikiMakeVisibleInline--> <span class="twistyPlugin twikiMakeVisibleInline"> <span id="weblistmagistralehide" class="twistyTrigger twikiUnvisited twistyHidden twistyInited"><a href="#"><img src="/pub/TWiki/TWikiDocGraphics/toggleclose.gif" border="0" alt=""><span class="twikiLinkLabel twikiUnvisited"> <strong>Laurea Magistrale</strong> </span></a> </span> </span>
+            <!--/twistyPlugin twikiMakeVisibleInline--> </li>
+          </ul> 
+          <div class="twistyPlugin">
+           <div id="weblistmagistraletoggle" class="twistyRememberSetting twistyContent twikiMakeHidden twistyInited"> 
+            <ul> 
+             <li> <a href="/twiki/view/Laurea_magistrale/WebHome" class="twikiLink">Percorsi di studio</a> </li> 
+             <li> Corsi 
+              <ul> 
+               <li> <a href="/twiki/view/AA/WebHome" class="twikiLink">Algoritmi Avanzati</a> <a class="twikiLink" href="/twiki/view/AA/WebRss?skin=rss"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a> </li> 
+               <li> <a href="/twiki/view/Algoritmica/WebHome" class="twikiLink">Algoritmica</a> <a href="/twiki/view/Algoritmica/WebRss?skin=rss" class="twikiLink"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a> </li> 
+               <li> <a href="/twiki/view/ASD/WebHome" class="twikiLink">Algoritmi e Strutture Dati</a> <a href="/twiki/view/ASD/WebRss?skin=rss" class="twikiLink"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a> </li> 
+               <li> <a href="/twiki/view/Algoreti/WebHome" class="twikiLink">Algoritmi per le reti</a> <a href="/twiki/view/Algoreti/WebRss?skin=rss" class="twikiLink"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a> </li> 
+               <li> <a class="twikiLink" href="/twiki/view/Architetture3/WebHome">Architetture degli elaboratori 3</a> <a class="twikiLink" href="/twiki/view/Architetture3/WebRss?skin=rss"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a> </li> 
+               <li> <a class="twikiLink" href="/twiki/view/AAP/WebHome">Architetture avanzate e parallele</a> <a href="/twiki/view/AAP/WebRss?skin=rss" class="twikiLink"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a> </li> 
+               <li> <a href="/twiki/view/BDC/WebHome" class="twikiLink">Big Data Computing</a> </li> 
+               <li> <a href="/twiki/view/BI/WebHome" class="twikiLink">Business Intelligence</a> <a href="/twiki/view/BI/WebRss?skin=rss" class="twikiLink"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a> <a class="twikiLink" href="/twiki/view/BDC/WebRss?skin=rss"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a> </li> 
+               <li> <a class="twikiLink" href="/twiki/view/CI/WebHome">Calcolo Intensivo</a> <a href="/twiki/view/CI/WebRss?skin=rss" class="twikiLink"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a> </li> 
+               <li> <a class="twikiLink" href="/twiki/view/Complessita/WebHome">Complessità</a> <a class="twikiLink" href="/twiki/view/Complessita/WebRss?skin=rss"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a> </li> 
+               <li> <a class="twikiLink" href="/twiki/view/CSaP/WebHome">Computer Systems and Programming</a> <a href="/twiki/view/CSaP/WebRss?skin=rss" class="twikiLink"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a> </li> 
+               <li> <a href="/twiki/view/TC/WebHome" class="twikiLink">Concurrent Systems</a> <a class="twikiLink" href="/twiki/view/TC/WebRss?skin=rss"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a> </li> 
+               <li> <a class="twikiLink" href="/twiki/view/Crittografia/WebHome">Crittografia</a> <a href="/twiki/view/Crittografia/WebRss?skin=rss" class="twikiLink"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a> </li> 
+               <li> <a href="/twiki/view/ELN/WebHome" class="twikiLink">Elaborazione del Linguaggio Naturale</a> <a class="twikiLink" href="/twiki/view/ELN/WebRss?skin=rss"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a> </li> 
+               <li> <a href="/twiki/view/Estrinfo/WebHome" class="twikiLink">Estrazione inf. dal web</a> <a class="twikiLink" href="/twiki/view/Estrinfo/WebRss?skin=rss"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a> </li> 
+               <li> <a href="/twiki/view/Fisica3/WebHome" class="twikiLink">Fisica 3</a> <a href="/twiki/view/Fisica3/WebRss?skin=rss" class="twikiLink"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a> </li> 
+               <li> <a class="twikiLink" href="/twiki/view/GFL/WebHome">Gamification Lab</a> <a class="twikiLink" href="/twiki/view/GFL/WebRss?skin=rss"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a> </li> 
+               <li> <a class="twikiLink" href="/twiki/view/IS/WebHome">Information Systems</a> <a href="/twiki/view/IS/WebRss?skin=rss" class="twikiLink"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a> </li> 
+               <li> <a class="twikiLink" href="/twiki/view/Ing_algo/WebHome">Ingegneria degli Algoritmi</a> <a class="twikiLink" href="/twiki/view/Ing_algo/WebRss?skin=rss"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a> </li> 
+               <li> <a class="twikiLink" href="/twiki/view/IMM/WebHome">Interazione Multi Modale</a> <a class="twikiLink" href="/twiki/view/IMM/WebRss?skin=rss"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a> </li> 
+               <li> <a class="twikiLink" href="/twiki/view/MFS/WebHome">Metodi Formali per il Software</a> <a href="/twiki/view/MFS/WebRss?skin=rss" class="twikiLink"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a> </li> 
+               <li> <a href="/twiki/view/CSeduA/WebHome" class="twikiLink">Methods in Computer Science Education: Analysis</a> <a class="twikiLink" href="/twiki/view/CSeduA/WebRss?skin=rss"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a> </li> 
+               <li> <a class="twikiLink" href="/twiki/view/CSeduD/WebHome">Methods in Computer Science Education: Design</a> <a href="/twiki/view/CSeduD/WebRss?skin=rss" class="twikiLink"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a> </li> 
+               <li> <a class="twikiLink" href="/twiki/view/PDSDR/WebHome">Prestazioni dei Sistemi di Rete</a> <a class="twikiLink" href="/twiki/view/PDSDR/WebRss?skin=rss"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a> </li> 
+               <li> <a href="/twiki/view/Prog_avanzata/WebHome" class="twikiCurrentTopicLink twikiCurrentWebHomeLink twikiLink">Prog. avanzata</a> <a href="/twiki/view/Prog_avanzata/WebRss?skin=rss" class="twikiLink"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a> </li> 
+               <li> <a href="/twiki/view/Reti_Avanzate/WebHome" class="twikiLink">Internet of Things</a> <a class="twikiLink" href="/twiki/view/Reti_Avanzate/WebRss?skin=rss"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a> </li> 
+               <li> <a href="/twiki/view/Sis_centrali/WebHome" class="twikiLink">Sistemi Centrali</a> <a class="twikiLink" href="/twiki/view/Sis_centrali/WebRss?skin=rss"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a> </li> 
+               <li> <a href="/twiki/view/Wireless/WebHome" class="twikiLink">Reti Wireless</a> <a href="/twiki/view/Wireless/WebRss?skin=rss" class="twikiLink"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a> </li> 
+               <li> <a href="/twiki/view/SB/WebHome" class="twikiLink">Sistemi Biometrici</a> <a class="twikiLink" href="/twiki/view/SB/WebRss?skin=rss"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a> </li> 
+               <li> <a class="twikiLink" href="/twiki/view/SD/WebHome">Sistemi Distribuiti</a> <a href="/twiki/view/SD/WebRss?skin=rss" class="twikiLink"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a> </li> 
+               <li> <a href="/twiki/view/GIS/WebHome" class="twikiLink">Sistemi Informativi Geografici</a> <a class="twikiLink" href="/twiki/view/GIS/WebRss?skin=rss"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a> </li> 
+               <li> <a class="twikiLink" href="/twiki/view/Sistemioperativi3/WebHome">Sistemi operativi 3</a> <a class="twikiLink" href="/twiki/view/Sistemioperativi3/WebRss?skin=rss"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a> </li> 
+               <li> <a href="/twiki/view/TSL/WebHome" class="twikiLink">Tecniche di Sicurezza basate sui Linguaggi</a> <a href="/twiki/view/TSL/WebRss?skin=rss" class="twikiLink"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a> </li> 
+               <li> <a class="twikiLink" href="/twiki/view/TD/WebHome">Teoria della<br> Dimostrazione</a> <a href="/twiki/view/TD/WebRss?skin=rss" class="twikiLink"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a> </li> 
+               <li> <a href="/twiki/view/VA/WebHome" class="twikiLink">Verifica del software</a> <a class="twikiLink" href="/twiki/view/VA/WebRss?skin=rss"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a> </li> 
+               <li> <a href="/twiki/view/Vis_art/WebHome" class="twikiLink">Visione artificiale</a> <a href="/twiki/view/Vis_art/WebRss?skin=rss" class="twikiLink"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a> </li>
+              </ul> </li> 
+             <li> Attività complementari 
+              <ul> 
+               <li> <a href="http://www.dsi.uniroma1.it/ale/Corsi/BioComp/" target="_blank">Biologia Computazionale<img alt="" border="0" width="13" src="/pub/TWiki/TWikiDocGraphics/external-link.gif" height="12"></a> </li> 
+               <li> <a class="twikiLink" href="/twiki/view/IOT/WebHome">Design and development of embedded systems for the Internet of Things</a> <a href="/twiki/view/IOT/WebRss?skin=rss" class="twikiLink"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a> </li> 
+               <li> <a class="twikiLink" href="/twiki/view/Legolab/WebHome">Lego Lab</a> <a class="twikiLink" href="/twiki/view/Legolab/WebRss?skin=rss"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a> </li> 
+               <li> <a class="twikiLink" href="/twiki/view/Prolog/WebHome">Logic Programming</a> <a href="/twiki/view/Prolog/WebRss?skin=rss" class="twikiLink"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a> </li> 
+               <li> <a href="http://www.dsi.uniroma1.it/ale/Corsi/PietreMiliari/" target="_blank">Pietre miliari della scienza<img alt="" border="0" width="13" src="/pub/TWiki/TWikiDocGraphics/external-link.gif" height="12"></a> </li> 
+               <li> <a class="twikiLink" href="/twiki/view/Prog_multicore/WebHome">Prog. di processori multicore</a> <a href="/twiki/view/Prog_multicore/WebRss?skin=rss" class="twikiLink"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a> </li> 
+               <li> <a class="twikiLink" href="/twiki/view/Interazione_av/WebHome">Sistemi per l'interazione locale e remota</a> <a class="twikiLink" href="/twiki/view/Interazione_av/WebRss?skin=rss"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a> </li> 
+               <li> <a class="twikiLink" href="/twiki/view/SSI/WebHome">Laboratorio di Cyber-Security</a> <a href="/twiki/view/SSI/WebRss?skin=rss" class="twikiLink"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a> </li> 
+               <li> <a class="twikiLink" href="/twiki/view/Vvse/WebHome">Verifica e Validazione di Software Embedded</a> <a class="twikiLink" href="/twiki/view/Vvse/WebRss?skin=rss"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a> </li>
+              </ul> </li>
+            </ul> 
+           </div>
+          </div> 
+          <!--/twistyPlugin--> 
+          <hr> 
+          <ul> 
+           <li> <span class="twistyPlugin twikiMakeVisibleInline"> <span id="weblistaltroshow" class="twistyTrigger twikiUnvisited twistyHidden twistyInited"><a href="#"><img src="/pub/TWiki/TWikiDocGraphics/toggleopen.gif" border="0" alt=""><span class="twikiLinkLabel twikiUnvisited"> <strong>Altri Webs ...</strong> </span></a> </span> </span>
+            <!--/twistyPlugin twikiMakeVisibleInline--> <span class="twistyPlugin twikiMakeVisibleInline"> <span id="weblistaltrohide" class="twistyTrigger twikiUnvisited twistyHidden twistyInited"><a href="#"><img src="/pub/TWiki/TWikiDocGraphics/toggleclose.gif" border="0" alt=""><span class="twikiLinkLabel twikiUnvisited"> <strong>Altri Webs</strong> </span></a> </span> </span>
+            <!--/twistyPlugin twikiMakeVisibleInline--> </li>
+          </ul> 
+          <div class="twistyPlugin">
+           <div id="weblistaltrotoggle" class="twistyRememberSetting twistyContent twikiMakeHidden twistyInited"> 
+            <ul> 
+             <li> 
+              <ul> 
+               <li> <a href="/twiki/view/Dottorandi/WebHome" class="twikiLink">Dottorandi</a> <a class="twikiLink" href="/twiki/view/Dottorandi/WebRss?skin=rss"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a> </li>
+              </ul> </li> 
+             <li> Commissioni 
+              <ul> 
+               <li> <a href="/twiki/view/Commissioni/Didattica/WebHome" class="twikiLink">Comm. Didattica</a> <a class="twikiLink" href="/twiki/view/Commissioni/Didattica/WebRss?skin=rss"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a> </li> 
+               <li> <a href="/twiki/view/Commissioni/Didattica_r/WebHome" class="twikiLink">Comm. Didattica_r</a> <a href="/twiki/view/Commissioni/Didattica_r/WebRss?skin=rss" class="twikiLink"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a> </li> 
+               <li> <a href="/twiki/view/Commissioni/Dottorato/WebHome" class="twikiLink">Comm. Dottorato</a> <a href="/twiki/view/Commissioni/Dottorato/WebRss?skin=rss" class="twikiLink"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a> </li> 
+               <li> <a class="twikiLink" href="/twiki/view/Commissioni/Erasmus/WebHome">Comm. Erasmus</a> <a href="/twiki/view/Commissioni/Erasmus/WebRss?skin=rss" class="twikiLink"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a> </li> 
+               <li> <a href="/twiki/view/Commissioni/Finanziamenti/WebHome" class="twikiLink">Comm. Finanziamenti</a> <a class="twikiLink" href="/twiki/view/Commissioni/Finanziamenti/WebRss?skin=rss"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a> </li> 
+               <li> <a href="/twiki/view/Commissioni/Scientifica/WebHome" class="twikiLink">Comm. Scientifica</a> <a href="/twiki/view/Commissioni/Scientifica/WebRss?skin=rss" class="twikiLink"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a> </li> 
+               <li> <a class="twikiLink" href="/twiki/view/Commissioni/Scientifica_r/WebHome">Comm Scientifica_r</a> <a href="/twiki/view/Commissioni/Scientifica_r/WebRss?skin=rss" class="twikiLink"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a> </li>
+              </ul> </li> 
+             <li> Corsi esterni 
+              <ul> 
+               <li> <a class="twikiLink" href="/twiki/view/Bioperl/WebHome">Perl e Bioperl</a> <a class="twikiLink" href="/twiki/view/Bioperl/WebRss?skin=rss"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a> </li> 
+               <li> <a class="twikiLink" href="/twiki/view/Ecdl/WebHome">ECDL</a> <span class="twikiNewLink"><a href="https://twiki.di.uniroma1.it/twiki/edit/ECDL/WebRss?topicparent=Prog_avanzata.WebHome;nowysiwyg=0" rel="nofollow" title="0 (this topic does not yet exist; you can create it)"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a></span> </li> 
+               <li> <a href="/twiki/view/Fondamenti1/WebHome" class="twikiLink">Fondamenti 1<br> (NETTUNO)</a> <a href="/twiki/view/Fondamenti1/WebRss?skin=rss" class="twikiLink"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a> </li> 
+               <li> <a class="twikiLink" href="/twiki/view/Fondamenti1/WebHome">Tecniche della Programmazione 1° modulo<br> (NETTUNO)</a> <a class="twikiLink" href="/twiki/view/Fondamenti1/WebRss?skin=rss"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a> </li> 
+               <li> <a href="/twiki/view/NLP/WebHome" class="twikiLink">Seminars in Artificial Intelligence and Robotics: Natural Language Processing</a> <a href="/twiki/view/NLP/WebRss?skin=rss" class="twikiLink"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a> </li> 
+               <li> Informatica generale 
+                <ul> 
+                 <li> <a href="/twiki/view/Info_gen/WebHome" class="twikiLink">Primo canale</a> <a class="twikiLink" href="/twiki/view/Info_gen/WebRss?skin=rss"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a> </li> 
+                 <li> <a href="/twiki/view/Infogen/WebHome" class="twikiLink">Secondo canale</a> <a href="/twiki/view/Infogen/WebRss?skin=rss" class="twikiLink"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a> </li> 
+                 <li> <a class="twikiLink" href="/twiki/view/Infogen/AA1011/WebHome">II canale A.A. 10-11</a> <span class="twikiNewLink"><a href="https://twiki.di.uniroma1.it/twiki/edit/Infogen/1011/WebRss?topicparent=Prog_avanzata.WebHome;nowysiwyg=0" rel="nofollow" title="0 (this topic does not yet exist; you can create it)"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a></span> </li>
+                </ul> </li> 
+               <li> <a class="twikiLink" href="/twiki/view/Informatica_di_base/WebHome">Informatica</a> <a class="twikiLink" href="/twiki/view/Informatica_di_base/WebRss?skin=rss"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a> </li> 
+               <li> <a class="twikiLink" href="/twiki/view/Info4stat/WebHome">Informatica per Statistica</a> <a class="twikiLink" href="/twiki/view/Info4stat/WebRss?skin=rss"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a> </li> 
+               <li> <a href="/twiki/view/LSEI/WebHome" class="twikiLink">Laboratorio di Strumentazione Elettronica e Informatica</a> <a href="/twiki/view/LSEI/WebRss?skin=rss" class="twikiLink"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a> </li>
+              </ul> </li> 
+             <li> Progetti 
+              <ul> 
+               <li> <a class="twikiLink" href="/twiki/view/Nemo/WebHome">Nemo</a> <a class="twikiLink" href="/twiki/view/Nemo/WebRss?skin=rss"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a> </li> 
+               <li> <a class="twikiLink" href="/twiki/view/Quis/WebHome">Quis</a> <a href="/twiki/view/Quis/WebRss?skin=rss" class="twikiLink"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a> </li> 
+               <li> <a class="twikiLink" href="/twiki/view/Remus/WebHome">Remus</a> <a href="/twiki/view/Remus/WebRss?skin=rss" class="twikiLink"> <img src="/pub/TWiki/TWikiDocGraphics/rss-small.gif" width="16" height="16" alt="RSS feed, text" title="RSS feed, text" border="0"> </a> </li>
+              </ul> </li>
+            </ul> 
+           </div>
+          </div> 
+          <!--/twistyPlugin--> 
+          <hr> 
+          <ul> 
+           <li> <span class="twistyPlugin twikiMakeVisibleInline"> <span id="weblisttwikishow" class="twistyTrigger twikiUnvisited twistyHidden twistyInited"><a href="#"><img src="/pub/TWiki/TWikiDocGraphics/toggleopen.gif" border="0" alt=""><span class="twikiLinkLabel twikiUnvisited"> <strong>TWiki ...</strong> </span></a> </span> </span>
+            <!--/twistyPlugin twikiMakeVisibleInline--> <span class="twistyPlugin twikiMakeVisibleInline"> <span id="weblisttwikihide" class="twistyTrigger twikiUnvisited twistyHidden twistyInited"><a href="#"><img src="/pub/TWiki/TWikiDocGraphics/toggleclose.gif" border="0" alt=""><span class="twikiLinkLabel twikiUnvisited"> <strong>TWiki</strong> </span></a> </span> </span>
+            <!--/twistyPlugin twikiMakeVisibleInline--> </li>
+          </ul> 
+          <div class="twistyPlugin">
+           <div id="weblisttwikitoggle" class="twistyRememberSetting twistyContent twikiMakeHidden twistyInited"> 
+            <ul> 
+             <li> 
+              <ul> 
+               <li> <a href="/twiki/view/TWiki/WebHome" class="twikiLink">Tutto su TWiki</a> </li> 
+               <li> <a href="/twiki/view/Users/WebHome" class="twikiLink">Users</a> </li> 
+               <li> <a href="/twiki/view/Main/WebHome" class="twikiLink">Main</a> </li> 
+               <li> <a class="twikiLink" href="/twiki/view/Sandbox/WebHome">Sandbox</a> </li>
+              </ul> </li>
+            </ul> 
+           </div>
+          </div> 
+          <!--/twistyPlugin--> 
+         </div>
+         <!-- /patternLeftBarContents-->
+        </div>
+        <!-- /patternLeftBar--> 
+       </div>
+       <!-- /patternFloatWrap--> 
+       <div class="clear">
+        &nbsp;
+       </div> 
+      </div>
+      <!-- /patternOuter-->
+     </div>
+     <!-- /patternWrapper-->
+     <div id="twTopBar" class="hideInPrint">
+      <!--<pre>--> 
+      <script type="text/javascript">
+var twtimeout = 600;
+var twclosetimer = null;
+var twmenuitem = null;
+function twTopMenuOpen() {
+ twTopMenuCancelTimer();
+ twTopMenuClose();
+ twmenuitem = $(this).find('ul').css('visibility', 'visible'); 
+}
+function twTopMenuClose() {
+ if(twmenuitem) { twmenuitem.css('visibility', 'hidden'); } 
+}
+function twTopMenuTimer() {
+ if(!twclosetimer) { twclosetimer = window.setTimeout(twTopMenuClose, twtimeout); }
+}
+function twTopMenuCancelTimer() {
+ if(twclosetimer) { window.clearTimeout(twclosetimer); twclosetimer = null; } 
+}
+$(document).ready(function() {
+ $('.twTopMenuTab > ul li').bind('mouseover', twTopMenuOpen);
+ $('.twTopMenuTab > ul').bind('mouseout',  twTopMenuTimer);
+});
+document.onclick = twTopMenuClose;
+</script> 
+      <!--</pre>-->
+      <div style="position: fixed; min-width: 35px; height: 22px; background-image: url(/pub/TWiki/TopMenuSkin/menu-start.png); background-repeat: no-repeat;" id="topmenu-start"> 
+       <div style="position: fixed; width: 100%; height: 22px; background-image: url(/pub/TWiki/TopMenuSkin/menu-gray-bg.png); background-repeat: repeat-x; display: block;" id="topmenu-bar"> 
+        <table border="0" cellpadding="0" cellspacing="0" width="100%"> 
+         <tbody>
+          <tr style="background-image: url(/pub/TWiki/TopMenuSkin/menu-gray-bg.png); background-repeat: repeat-x;"> 
+           <td width="35"><img src="/pub/TWiki/TopMenuSkin/menu-start.png" width="35" height="22" alt=""></td> 
+           <td width="80%"> 
+            <div class="twTopMenuTab"> 
+             <ul> 
+              <li> <a href="/twiki/view/Users/WebHome" title="TWiki home --- Tip: This menu-bar is also a 'You are here' breadcrumb">Home <img src="https://twiki.di.uniroma1.it/pub/TWiki/TWikiDocGraphics/menu-down.gif" alt="menu-down.gif"></a> 
+               <ul> 
+                <li> <a href="/twiki/view/TWiki/SiteMap" title="Site map listing all webs"><img src="/pub/TWiki/TWikiDocGraphics/sitetree.gif" width="16" height="16" alt="Site tree" title="Site tree" border="0"> Site map</a> </li> 
+                <li> <span style="white-space:nowrap"><a href="/twiki/view/AA/WebHome"><img src="https://twiki.di.uniroma1.it/pub/TWiki/TWikiDocGraphics/web-bg.gif" border="0" alt="" width="16" height="16" style="background-color:#D0D0D0">&nbsp;AA web</a></span> </li> 
+                <li> <span style="white-space:nowrap"><a href="/twiki/view/AAP/WebHome"><img src="https://twiki.di.uniroma1.it/pub/TWiki/TWikiDocGraphics/web-bg.gif" border="0" alt="" width="16" height="16" style="background-color:#D0D0D0">&nbsp;AAP web</a></span> </li> 
+                <li> <span style="white-space:nowrap"><a href="/twiki/view/ASD/WebHome"><img src="https://twiki.di.uniroma1.it/pub/TWiki/TWikiDocGraphics/web-bg.gif" border="0" alt="" width="16" height="16" style="background-color:#D0D0D0">&nbsp;ASD web</a></span> </li> 
+                <li> <span style="white-space:nowrap"><a href="/twiki/view/Algebra/WebHome"><img src="https://twiki.di.uniroma1.it/pub/TWiki/TWikiDocGraphics/web-bg.gif" border="0" alt="" width="16" height="16" style="background-color:#D0D0D0">&nbsp;Algebra web</a></span> </li> 
+                <li> <span style="white-space:nowrap"><a href="/twiki/view/Algebra/AL/WebHome"><img src="https://twiki.di.uniroma1.it/pub/TWiki/TWikiDocGraphics/web-bg.gif" border="0" alt="" width="16" height="16" style="background-color:#D0D0D0">&nbsp;<span class="twikiWebIndent"></span>AL web</a></span> </li> 
+                <li> <span style="white-space:nowrap"><a href="/twiki/view/Algebra/AL/AA1112/WebHome"><img src="https://twiki.di.uniroma1.it/pub/TWiki/TWikiDocGraphics/web-bg.gif" border="0" alt="" width="16" height="16" style="background-color:#D0D0D0">&nbsp;<span class="twikiWebIndent"></span><span class="twikiWebIndent"></span>AA1112 web</a></span> </li> 
+                <li> <span style="white-space:nowrap"><a href="/twiki/view/Algebra/AL/AA1213/WebHome"><img src="https://twiki.di.uniroma1.it/pub/TWiki/TWikiDocGraphics/web-bg.gif" border="0" alt="" width="16" height="16" style="background-color:#D0D0D0">&nbsp;<span class="twikiWebIndent"></span><span class="twikiWebIndent"></span>AA1213 web</a></span> </li> 
+                <li> <span style="white-space:nowrap"><a href="/twiki/view/Algebra/MZ/WebHome"><img src="https://twiki.di.uniroma1.it/pub/TWiki/TWikiDocGraphics/web-bg.gif" border="0" alt="" width="16" height="16" style="background-color:#d0d0d0">&nbsp;<span class="twikiWebIndent"></span>MZ web</a></span> </li> 
+                <li> <span style="white-space:nowrap"><a href="/twiki/view/Algebra/MZ/AA1112/WebHome"><img src="https://twiki.di.uniroma1.it/pub/TWiki/TWikiDocGraphics/web-bg.gif" border="0" alt="" width="16" height="16" style="background-color:#D0D0D0">&nbsp;<span class="twikiWebIndent"></span><span class="twikiWebIndent"></span>AA1112 web</a></span> </li> 
+                <li> <span style="white-space:nowrap"><a href="/twiki/view/Algebra/MZ/AA1213/WebHome"><img src="https://twiki.di.uniroma1.it/pub/TWiki/TWikiDocGraphics/web-bg.gif" border="0" alt="" width="16" height="16" style="background-color:#D0D0D0">&nbsp;<span class="twikiWebIndent"></span><span class="twikiWebIndent"></span>AA1213 web</a></span> </li> 
+                <li> <span style="white-space:nowrap"><a href="/twiki/view/Algebra/MZ/AA1213/AA1112/WebHome"><img src="https://twiki.di.uniroma1.it/pub/TWiki/TWikiDocGraphics/web-bg.gif" border="0" alt="" width="16" height="16" style="background-color:#D0D0D0">&nbsp;<span class="twikiWebIndent"></span><span class="twikiWebIndent"></span><span class="twikiWebIndent"></span>AA1112 web</a></span> </li> 
+                <li> <span style="white-space:nowrap"><a href="/twiki/view/Algebra/MZ/AA1314/WebHome"><img src="https://twiki.di.uniroma1.it/pub/TWiki/TWikiDocGraphics/web-bg.gif" border="0" alt="" width="16" height="16" style="background-color:#D0D0D0">&nbsp;<span class="twikiWebIndent"></span><span class="twikiWebIndent"></span>AA1314 web</a></span> </li> 
+                <li> <span style="white-space:nowrap"><a href="/twiki/view/Algebra/MZ/AA1415/WebHome"><img src="https://twiki.di.uniroma1.it/pub/TWiki/TWikiDocGraphics/web-bg.gif" border="0" alt="" width="16" height="16" style="background-color:#D0D0D0">&nbsp;<span class="twikiWebIndent"></span><span class="twikiWebIndent"></span>AA1415 web</a></span> </li> 
+                <li> <span style="white-space:nowrap"><a href="/twiki/view/Algebra/MZ/AA1516/WebHome"><img src="https://twiki.di.uniroma1.it/pub/TWiki/TWikiDocGraphics/web-bg.gif" border="0" alt="" width="16" height="16" style="background-color:#DDDDDD">&nbsp;<span class="twikiWebIndent"></span><span class="twikiWebIndent"></span>AA1516 web</a></span> </li> 
+                <li> <span style="white-space:nowrap"><a href="/twiki/view/Algebra/MZ/AA1617/WebHome"><img src="https://twiki.di.uniroma1.it/pub/TWiki/TWikiDocGraphics/web-bg.gif" border="0" alt="" width="16" height="16" style="background-color:#d0d0d0">&nbsp;<span class="twikiWebIndent"></span><span class="twikiWebIndent"></span>AA1617 web</a></span> </li> 
+                <li> <span style="white-space:nowrap"><a href="/twiki/view/Algebra/MZ/AA1819/WebHome"><img src="https://twiki.di.uniroma1.it/pub/TWiki/TWikiDocGraphics/web-bg.gif" border="0" alt="" width="16" height="16" style="background-color:#d0d0d0">&nbsp;<span class="twikiWebIndent"></span><span class="twikiWebIndent"></span>AA1819 web</a></span> </li> 
+                <li> <span style="white-space:nowrap"><a href="/twiki/view/Algebra/Old/WebHome"><img src="https://twiki.di.uniroma1.it/pub/TWiki/TWikiDocGraphics/web-bg.gif" border="0" alt="" width="16" height="16" style="background-color:#D0D0D0">&nbsp;<span class="twikiWebIndent"></span>Old web</a></span> </li> 
+                <li> <span style="white-space:nowrap"><a href="/twiki/view/Algo_par_dis/WebHome"><img src="https://twiki.di.uniroma1.it/pub/TWiki/TWikiDocGraphics/web-bg.gif" border="0" alt="" width="16" height="16" style="background-color:#D0D0D0">&nbsp;Algo_par_dis web</a></span> </li> 
+                <li> <span style="white-space:nowrap"><a href="/twiki/view/Algoreti/WebHome"><img src="https://twiki.di.uniroma1.it/pub/TWiki/TWikiDocGraphics/web-bg.gif" border="0" alt="" width="16" height="16" style="background-color:#D0D0D0">&nbsp;Algoreti web</a></span> </li> 
+                <li> <span style="white-space:nowrap"><a href="/twiki/view/Algoritmi1/WebHome"><img src="https://twiki.di.uniroma1.it/pub/TWiki/TWikiDocGraphics/web-bg.gif" border="0" alt="" width="16" height="16" style="background-color:#D0D0D0">&nbsp;Algoritmi1 web</a></span> </li> 
+                <li> <span style="white-space:nowrap"><a href="/twiki/view/Algoritmi1/Inf/WebHome"><img src="https://twiki.di.uniroma1.it/pub/TWiki/TWikiDocGraphics/web-bg.gif" border="0" alt="" width="16" height="16" style="background-color:#D0D0D0">&nbsp;<span class="twikiWebIndent"></span>Inf web</a></span> </li> 
+                <li> <span style="white-space:nowrap"><a href="/twiki/view/Algoritmi2/WebHome"><img src="https://twiki.di.uniroma1.it/pub/TWiki/TWikiDocGraphics/web-bg.gif" border="0" alt="" width="16" height="16" style="background-color:#D0D0D0">&nbsp;Algoritmi2 web</a></span> </li> 
+                <li> <span style="white-space:nowrap"><a href="/twiki/view/Algoritmi_vis/WebHome"><img src="https://twiki.di.uniroma1.it/pub/TWiki/TWikiDocGraphics/web-bg.gif" border="0" alt="" width="16" height="16" style="background-color:#D0D0D0">&nbsp;Algoritmi_vis web</a></span> </li> 
+                <li> <span style="white-space:nowrap"><a href="/twiki/view/Algoritmica/WebHome"><img src="https://twiki.di.uniroma1.it/pub/TWiki/TWikiDocGraphics/web-bg.gif" border="0" alt="" width="16" height="16" style="background-color:#D0D0D0">&nbsp;Algoritmica web</a></span> </li> 
+                <li> <span style="white-space:nowrap"><a href="/twiki/view/ApprAuto/WebHome"><img src="https://twiki.di.uniroma1.it/pub/TWiki/TWikiDocGraphics/web-bg.gif" border="0" alt="" width="16" height="16" style="background-color:#D0D0D0">&nbsp;ApprAuto web</a></span> </li> 
+                <li> <span style="white-space:nowrap"><a href="/twiki/view/Arc2appunti/WebHome"><img src="https://twiki.di.uniroma1.it/pub/TWiki/TWikiDocGraphics/web-bg.gif" border="0" alt="" width="16" height="16" style="background-color:#FFFF99">&nbsp;Arc2appunti web</a></span> </li> 
+                <li> <a class="twikiLink" href="/twiki/view/TWiki/SiteMap"><img src="https://twiki.di.uniroma1.it/pub/TWiki/TWikiDocGraphics/dot_ur.gif" border="0" alt="" width="16" height="16"> More...</a> </li>
+               </ul> </li> 
+              <li> <img src="https://twiki.di.uniroma1.it/pub/TWiki/TopMenuSkin/menu-right.png" alt="" width="8" height="22"> </li> 
+              <li> <a class="twikiCurrentTopicLink twikiCurrentWebHomeLink twikiLink" href="/twiki/view/Prog_avanzata/WebHome"><img src="https://twiki.di.uniroma1.it/pub/TWiki/TWikiDocGraphics/web-bg.gif" border="0" alt="" width="16" height="16" style="background-color:#D0D0D0"> Prog_avanzata Web <img src="/pub/TWiki/TWikiDocGraphics/menu-down.gif" width="14" height="16" alt="Menu dropdown" title="Menu dropdown" border="0"></a> 
+               <ul> 
+                <li> <a href="/twiki/view/Prog_avanzata/WebCreateNewTopic?topicparent=WebHome" target="_top"> <img src="/pub/TWiki/TWikiDocGraphics/newtopic.gif" width="16" height="16" alt="New topic" title="New topic" border="0"> Create New Topic</a> </li> 
+                <li> <a class="twikiLink" href="/twiki/view/Prog_avanzata/WebTopicList"> <img src="/pub/TWiki/TWikiDocGraphics/index.gif" width="16" height="16" alt="Index" title="Index" border="0"> Index</a> </li> 
+                <li> <a href="/twiki/view/Prog_avanzata/WebSearch" class="twikiLink"> <img src="/pub/TWiki/TWikiDocGraphics/searchtopic.gif" width="16" height="16" alt="Search topic" title="Search topic" border="0"> Search</a> </li> 
+                <li> <a href="/twiki/view/Prog_avanzata/WebChanges" class="twikiLink"> <img src="/pub/TWiki/TWikiDocGraphics/changes.gif" width="16" height="16" alt="Changes" title="Changes" border="0"> Changes</a> </li> 
+                <li> <a class="twikiLink" href="/twiki/view/Prog_avanzata/WebNotify"> <img src="/pub/TWiki/TWikiDocGraphics/notify.gif" width="16" height="16" alt="Notify" title="Notify" border="0"> Notifications</a> </li> 
+                <li> <a class="twikiLink" href="/twiki/view/Prog_avanzata/WebRss"> <img src="/pub/TWiki/TWikiDocGraphics/feed.gif" width="16" height="16" alt="RSS feed, rounded corners" title="RSS feed, rounded corners" border="0"> RSS Feed</a> </li> 
+                <li> <a href="/twiki/view/Prog_avanzata/WebStatistics" class="twikiLink"> <img src="/pub/TWiki/TWikiDocGraphics/statistics.gif" width="16" height="16" alt="Statistics" title="Statistics" border="0"> Statistics</a> </li> 
+                <li> <a href="/twiki/view/Prog_avanzata/WebPreferences" class="twikiLink"> <img src="/pub/TWiki/TWikiDocGraphics/wrench.gif" width="16" height="16" alt="Wrench, tools" title="Wrench, tools" border="0"> Preferences</a> </li>
+               </ul> </li> 
+              <li> </li> 
+              <li> <img src="https://twiki.di.uniroma1.it/pub/TWiki/TopMenuSkin/menu-right.png" alt="" width="8" height="22"> </li> 
+              <li> <a href="https://twiki.di.uniroma1.it/twiki/view/Prog_avanzata/WebHome" title="Topic WebHome -- StefanoGuerrini - 2008-02-29 - r14">View <img alt="menu-down.gif" src="https://twiki.di.uniroma1.it/pub/TWiki/TWikiDocGraphics/menu-down.gif"></a> 
+               <ul> 
+                <li> <a href="/twiki/view/Prog_avanzata/WebHome?raw=on" rel="nofollow" title="View raw text without formatting">Raw View</a> </li> 
+                <li> <a href="/twiki/view/Prog_avanzata/WebHome?cover=print" rel="nofollow" title="Printable version of this topic">Print version</a> </li> 
+                <li> <a href="/twiki/oops/Prog_avanzata/WebHome?template=backlinksweb" rel="nofollow" title="Search the Prog_avanzata web for topics that link to here">Find backlinks</a> </li> 
+                <li> <a href="/twiki/rdiff/Prog_avanzata/WebHome?type=history" rel="nofollow" title="View total topic history">History</a> </li> 
+                <li> <a href="/twiki/oops/Prog_avanzata/WebHome?template=oopsmore&amp;param1=14&amp;param2=14" rel="nofollow" title="Delete or rename this topic; set parent topic; view and compare revisions">More topic actions</a> </li>
+               </ul> </li> 
+              <li> <a href="https://twiki.di.uniroma1.it/twiki/edit/Prog_avanzata/WebHome?t=1584543587" rel="nofollow" title="Edit this topic text">Edit <img src="https://twiki.di.uniroma1.it/pub/TWiki/TWikiDocGraphics/menu-down.gif" alt="menu-down.gif"></a> 
+               <ul> 
+                <li> <a href="https://twiki.di.uniroma1.it/twiki/edit/Prog_avanzata/WebHome?t=1584543587;nowysiwyg=1" rel="nofollow" title="Raw Edit this topic text">Raw edit</a> </li> 
+                <li> <a href="/twiki/attach/Prog_avanzata/WebHome" rel="nofollow" title="Attach an image or document to this topic">Attach file or image</a> </li> 
+                <li> <a href="https://twiki.di.uniroma1.it/twiki/manage/Prog_avanzata/WebHome?t=1584543587;action=editSettings" target="_top">Edit topic preference settings</a> </li> 
+                <li> <a href="https://twiki.di.uniroma1.it/twiki/oops/Prog_avanzata/WebHome?template=oopsmore#SetParent" target="_top">Set new parent</a> </li> 
+                <li> <a href="/twiki/oops/Prog_avanzata/WebHome?template=oopsmore&amp;param1=14&amp;param2=14" rel="nofollow" title="Delete or rename this topic; set parent topic; view and compare revisions">More topic actions</a> </li>
+               </ul> </li>
+             </ul> 
+             <p></p> 
+            </div></td>
+           <td>
+            <div class="twTopMenuTab" style="float:right"> 
+             <ul> 
+              <li> <a href="/twiki/view/Users/TWikiGuest" class="twikiLink"> <img src="/pub/TWiki/TWikiDocGraphics/person.gif" width="16" height="16" alt="Person" title="Person" border="0"> Account <img src="/pub/TWiki/TWikiDocGraphics/menu-down.gif" width="14" height="16" alt="Menu dropdown" title="Menu dropdown" border="0"></a> 
+               <ul> 
+                <li> <a href="/twiki/login/Prog_avanzata/WebHome?origurl=/twiki/view/Prog_avanzata/WebHome">Log In</a> </li> 
+                <li> <a class="twikiLink" href="/twiki/view/TWiki/TWikiRegistration">Register User</a> </li>
+               </ul> </li>
+             </ul> 
+            </div></td>
+           <td>
+            <div class="twTopMenuTab"> 
+             <ul> 
+              <li> <a href="/twiki/view/TWiki/WebHome" class="twikiLink"><img src="/pub/TWiki/TWikiDocGraphics/twiki-help.gif" width="16" height="16" border="0" alt="Help" title="TWiki help" style="margin: 1px;"></a> </li>
+             </ul> 
+            </div></td> 
+           <td width="40"><img src="/pub/TWiki/TopMenuSkin/spacer.gif" width="40" height="1" alt=""></td> 
+          </tr> 
+         </tbody>
+        </table> 
+       </div> 
+      </div> 
+      <div style="height: 22px;"></div> 
+      <table border="0" cellpadding="0" cellspacing="0" width="100%"> 
+       <tbody>
+        <tr> 
+         <td width="40"><img src="/pub/TWiki/TopMenuSkin/spacer.gif" width="40" alt=""></td> 
+         <td align="left" width="10%"> <span id="twikiLogo" class="twikiImage"><a href="/twiki/view/Users/WebHome"><img src="https://twiki.di.uniroma1.it/pub/Main/TWikiPreferences/pace.jpg" border="0" alt="Viva la pace!" title="Viva la pace!" style="border:none;"></a></span></td> 
+         <td align="center" valign="middle"> 
+          <div class="twikiBroadcastMessage">
+            Questo sito usa cookies, usandolo ne accettate la presenza. (
+           <a href="/twiki/view/Main/CookiePolicy" class="twikiLink">CookiePolicy</a>) 
+           <br>Torna al 
+           <strong><a href="http://www.di.uniroma1.it" target="_blank">Dipartimento di Informatica<img alt="" border="0" width="13" src="/pub/TWiki/TWikiDocGraphics/external-link.gif" height="12"></a></strong> 
+          </div></td> 
+         <td align="right" style="background-image: url(/pub/TWiki/TopMenuSkin/banner-net-bg.png); background-repeat: repeat-x;" class="patternMetaMenu"> 
+          <ul> 
+           <li> 
+            <form name="jumpForm" action="/twiki/view/Prog_avanzata/WebHome">
+             <input id="jumpFormField" type="text" class="twikiInputField" name="topic" value="" size="10" title="Jump to a topic by its name; browse to a topic by typing a partial name">
+             <noscript>
+              &nbsp;
+              <input type="submit" class="twikiButton" size="5" name="submit" value="Jump">&nbsp;
+             </noscript> 
+            </form> </li> 
+           <li> 
+            <form name="quickSearchForm" action="/twiki/view/Prog_avanzata/WebSearch">
+             <input type="text" class="twikiInputField" id="quickSearchBox" name="search" value="" size="10" title="Search in current web. For example, to search for all topics that contain &quot;SOAP&quot;, &quot;WSDL&quot;, a literal &quot;web service&quot;, but not &quot;shampoo&quot;, write: soap wsdl &quot;web service&quot; -shampoo">
+             <input type="hidden" name="scope" value="all">
+             <input type="hidden" name="web" value="Prog_avanzata">
+             <noscript>
+              &nbsp;
+              <input type="submit" size="5" class="twikiButton" name="submit" value="Search">&nbsp;
+             </noscript> 
+            </form> </li> 
+           <li> 
+            <form name="changeLanguage" action="/twiki/oops/Prog_avanzata/WebHome" method="get">
+             <select name="language" class="twikiSelect" onchange="document.changeLanguage.submit()"><option value="de">Deutsch</option> <option selected value="en">English</option> <option value="es">Español</option> <option value="fr">_Français_</option> <option value="it">Italiano</option></select>
+             <input type="hidden" name="template" value="oopslanguagechanged">
+             <noscript>
+              <input class="twikiButton" type="submit" value="Change language">
+             </noscript>
+            </form> </li>
+          </ul> </td> 
+         <td width="15"><img src="/pub/TWiki/TopMenuSkin/spacer.gif" width="15" height="1" alt=""></td> 
+         <td width="165" valign="bottom">
+          <div id="twTopBarButtons"> 
+           <ul> 
+            <li> <span><a href="https://twiki.di.uniroma1.it/twiki/edit/Prog_avanzata/WebHome?t=1584543587;nowysiwyg=0" rel="nofollow" title="Edit this topic text" accesskey="e"><img src="/pub/TWiki/TWikiDocGraphics/uweb-o14.gif" width="14" height="14" border="0" alt=""> <span class="twikiAccessKey">E</span>dit</a></span> </li> 
+            <li> <span><a href="/twiki/attach/Prog_avanzata/WebHome" rel="nofollow" title="Attach an image or document to this topic" accesskey="a"><span class="twikiAccessKey">A</span>ttach</a></span> </li>
+           </ul> 
+          </div></td> 
+         <td width="40"><img src="/pub/TWiki/TopMenuSkin/spacer.gif" width="40" height="1" alt=""></td> 
+        </tr> 
+       </tbody>
+      </table> 
+      <script type="text/javascript">
+var twTopMenuBarCloseTimer = null;
+var twTopMenuBarTimerMsec = 1000;
+function twToggleTopMenuBar( isHover ) {
+  if( 'off' == 'on' || 'off' == '1' ) {
+    return;
+  }
+  var displayState = 'none';
+  if( $(window).scrollTop()<22 || isHover>0 ) {
+     displayState = 'block';
+     if(twTopMenuBarCloseTimer) { window.clearTimeout(twTopMenuBarCloseTimer); twTopMenuBarCloseTimer = null; } 
+  } else {
+    if(!twTopMenuBarCloseTimer && isHover>=0 ) {
+      twTopMenuBarCloseTimer = window.setTimeout(twCloseTopMenuBar, twTopMenuBarTimerMsec);
+      return;
+    }
+  }
+  if( $('#topmenu-bar').css('display') != displayState ) {
+    $('#topmenu-bar').css('display', displayState);
+  }
+};
+function twCloseTopMenuBar() {
+  twToggleTopMenuBar(-1);
+}
+$(document).ready(function () {
+  twToggleTopMenuBar(0);
+});
+$(window).scroll(function () {  
+  twToggleTopMenuBar(0);
+});
+$('#topmenu-start').hover(
+  function () { twToggleTopMenuBar(1); }, 
+  function () { twToggleTopMenuBar(0); }
+);
+</script>
+     </div>
+     <!-- /twTopBar-->
+     <div id="patternBottomBar">
+      <div id="patternBottomBarContents">
+       <div id="patternWebBottomBar">
+        <div class="twikiCopyright">
+         <span class="twikiRight"> <a href="http://twiki.org/"><img src="/pub/TWiki/TWikiLogos/T-badge-88x31.gif" alt="This site is powered by the TWiki collaboration platform" width="88" height="31" title="This site is powered by the TWiki collaboration platform" border="0"></a></span>
+         <span class="twikiRight" style="padding:0 10px 0 10px"> <a href="http://www.perl.org/"><img src="/pub/TWiki/TWikiLogos/perl-logo-88x31.gif" alt="Powered by Perl" width="88" height="31" title="Powered by Perl" border="0"></a></span>Copyright © 2008-2020 by the contributing authors. All material on this collaboration platform is the property of the contributing authors. 
+         <br> Ideas, requests, problems regarding TWiki? 
+         <a href="mailto:sterbini@di.uniroma1.it?subject=TWiki%20Feedback%20on%20Prog_avanzata.WebHome">Send feedback</a>
+        </div>
+        <!--/twikiCopyright-->
+       </div>
+       <!--/patternWebBottomBar-->
+      </div>
+      <!-- /patternBottomBarContents-->
+     </div>
+     <!-- /patternBottomBar--> 
+    </div>
+    <!-- /patternPage--> 
+   </div>
+   <!-- /patternPageShadow--> 
+  </div>
+  <!-- /patternScreen--> 
+ </body>
+</html>

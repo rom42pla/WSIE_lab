@@ -1,0 +1,187 @@
+https://twiki.di.uniroma1.it/twiki/rdiff/SD/WebHome?rev1=53;rev2=52
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+ <head> 
+  <script type="text/javascript" src="/pub/TWiki/JQueryPlugin/jquery.js"></script> 
+  <script type="text/javascript" src="/pub/TWiki/JQueryPlugin/jquery-migrate.js"></script> 
+  <link rel="stylesheet" href="/pub/TWiki/JQueryPlugin/jquery-all.css" type="text/css" media="all"> 
+  <script type="text/javascript" src="/pub/TWiki/JQueryPlugin/jquery-all.js"></script> 
+  <title>(52 vs. 53) WebHome &lt; SD &lt; TWiki</title> 
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+  <link rel="icon" href="https://twiki.di.uniroma1.it/pub/Main/TWikiPreferences/favicon.ico" type="image/x-icon"> 
+  <link rel="shortcut icon" href="https://twiki.di.uniroma1.it/pub/Main/TWikiPreferences/favicon.ico" type="image/x-icon"> 
+  <link rel="alternate" href="https://twiki.di.uniroma1.it/twiki/edit/SD/WebHome?t=1584543553" type="application/x-wiki" title="Edit WebHome"> 
+  <link rel="edit" href="https://twiki.di.uniroma1.it/twiki/edit/SD/WebHome?t=1584543553" title="Edit WebHome"> 
+  <meta name="SCRIPTURLPATH" content="/twiki"> 
+  <meta name="SCRIPTSUFFIX" content=""> 
+  <meta name="TEXT_JUMP" content="Jump"> 
+  <meta name="TEXT_SEARCH" content="Search"> 
+  <meta name="TEXT_NUM_TOPICS" content="Number of topics:"> 
+  <meta name="TEXT_MODIFY_SEARCH" content="Modify search"> 
+  <meta name="robots" content="noindex">
+  <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="/twiki/view/SD/WebRss"> 
+  <base href="https://twiki.di.uniroma1.it/twiki/rdiff/SD/WebHome"> 
+  <!--BEHAVIOURCONTRIB-->
+  <script type="text/javascript" src="/pub/TWiki/BehaviourContrib/behaviour.compressed.js"></script> 
+  <script type="text/javascript" src="/pub/TWiki/TWikiJavascripts/twikilib.js"></script> 
+  <script type="text/javascript" src="/pub/TWiki/TWikiJavascripts/twikiWindow.js"></script> 
+  <script type="text/javascript" src="/pub/TWiki/TWikiJavascripts/twikiEvent.js"></script> 
+  <script type="text/javascript" src="/pub/TWiki/TWikiJavascripts/twikiHTML.js"></script> 
+  <script type="text/javascript" src="/pub/TWiki/TWikiJavascripts/twikiCSS.js"></script> 
+  <script type="text/javascript" src="/pub/TWiki/TWikiJavascripts/twikiForm.js"></script> 
+  <script type="text/javascript" src="/pub/TWiki/PatternSkin/pattern.js"></script>
+  <style type="text/css" media="all">
+@import url('/pub/TWiki/TWikiTemplates/base.css');
+</style> 
+  <style type="text/css" media="all">
+
+
+</style> 
+  <style type="text/css" media="all">
+@import url('/pub/TWiki/PatternSkin/layout.css');
+@import url('/pub/TWiki/PatternSkin/style.css');
+@import url('/pub/TWiki/PatternSkin/colors.css');
+</style> 
+  <style type="text/css" media="all">
+	/* Styles that are set using variables */
+	.patternBookView .twikiTopRow,
+	.patternWebIndicator a img,
+	.patternWebIndicator a:hover img {
+		background-color:#D0D0D0;
+	}
+	
+	
+	.patternBookView {
+		border-color:#D0D0D0;
+	}
+	.patternPreviewPage #patternMain {
+		/* uncomment to set the preview image */
+		/*background-image:url("/pub/TWiki/PreviewBackground/preview2bg.gif");*/
+	}
+	
+</style>
+  <style type="text/css" media="all">
+@import url('https://twiki.di.uniroma1.it/pub/Main/TWikiPreferences/modifiche.css');
+
+
+</style> 
+  <style type="text/css" media="all">
+	@import url("/pub/TWiki/PatternSkin/print.css");
+</style> 
+  <!--[if IE]><style type="text/css" media="screen">
+pre {
+	overflow-x:auto;
+	padding-bottom:expression(this.scrollWidth > this.offsetWidth ? 16 : 0);
+}
+</style>
+<![endif]--> 
+  <!--[if lte IE 6]> 
+<style type="text/css">
+#patternLeftBar {
+	position:relative; /* IE 5.5 needs this or the contents won't show outside the parent container on print. IE 6.0 needs it only during printable copy! */
+}
+</style><![endif]--> 
+  <script type="text/javascript" src="/pub/TWiki/TWikiJavascripts/twikiStyles.js"></script> 
+ </head> 
+ <body class="patternNoViewPage patternDiffPage"> 
+  <a name="PageTop"></a> 
+  <div id="patternScreen"> 
+   <div id="patternPageShadow"> 
+    <div id="patternPage"> 
+     <div id="patternOuter"> 
+      <div id="patternFloatWrap"> 
+       <div id="patternMain"> 
+        <div id="patternMainContents">
+         <div class="patternSimpleLogo">
+          <img src="https://twiki.di.uniroma1.it/pub/Main/TWikiPreferences/pace.jpg" border="0" alt="Viva la pace!">
+         </div>
+         <div class="patternTopic">
+          <h1 class="patternTemplateTitle">Difference: <a href="/twiki/view/SD/WebHome">WebHome</a> (52 vs. 53) </h1> 
+          <div class="patternSearchResults">
+           <div class="patternDiff">
+            <div class="patternSearchResults">
+             <h4 class="patternSearchResultsHeader"><span class="twikiLeft"><b><a href="/twiki/view/SD/WebHome?rev=53" title="Topic revision: 53 (2011-10-25 - 11:45:27) - AlessandroMei" rel="nofollow">Revision 53</a></b></span><span class="twikiRight">2011-10-25 - <a href="/twiki/view/Users/AlessandroMei" class="twikiLink">AlessandroMei</a></span><br class="twikiClear"></h4> 
+             <table class="twikiDiffTable" cellpadding="0" width="100%" cellspacing="0">
+              <tbody>
+               <tr bgcolor="#eeeeee" class="twikiDiffLineNumberHeader">
+                <th align="left" colspan="9">Line: 1 to 1</th>
+               </tr>
+               <tr>
+                <td>&nbsp;</td>
+                <td class="twikiDiffUnchangedText"><h1><a name="Sistemi_distribuiti"></a> Sistemi distribuiti </h1> <p></p> Docente: <a href="http://www.dsi.uniroma1.it/~mei" target="_blank">Alessandro Mei<img alt="" width="13" border="0" src="/pub/TWiki/TWikiDocGraphics/external-link.gif" height="12"></a> <p></p> <h2><a name="Avvisi"></a> Avvisi </h2></td>
+               </tr>
+               <tr>
+                <td class="twikiDiffChangedHeader" colspan="9" bgcolor="#D0FFD0"><b>Changed: </b></td>
+               </tr>
+               <tr>
+                <td valign="top" width="1%" bgcolor="#ff9999" class="twikiDiffDeletedMarker">&lt;<br>&lt;</td>
+                <td class="twikiDiffDeletedText"> 
+                 <ul> 
+                  <li> per chi si iscrive alla laurea magistrale nell'anno accademico 2010-11: Questo corso è obbligatorio. In quest'anno accademico 2010-11 Sistemi distribuiti non si tiene, ma ci sarà regolarmente nell'anno accademico 2011-12, primo semestre, durante il vostro secondo anno di laurea magistrale. </li>
+                 </ul> </td>
+               </tr>
+               <tr>
+                <td bgcolor="#ccccff" class="twikiDiffAddedMarker" width="1%" valign="top">&gt;<br>&gt;</td>
+                <td class="twikiDiffAddedText"> 
+                 <ul> 
+                  <li> Questo sito web è vecchio. Il sito per l'anno accademico 2011-12 è <a href="https://sites.google.com/site/sistemidistribuitimeisapienza/" target="_blank">https://sites.google.com/site/sistemidistribuitimeisapienza/<img alt="" width="13" border="0" src="/pub/TWiki/TWikiDocGraphics/external-link.gif" height="12"></a>. </li>
+                 </ul> </td>
+               </tr>
+               <tr>
+                <td>&nbsp;</td>
+                <td class="twikiDiffUnchangedText"> <h2><a name="Obiettivi"></a> Obiettivi </h2></td>
+               </tr>
+              </tbody>
+             </table>
+            </div>
+            <!--/patternSearchResults-->
+           </div>
+           <!--/patternDiff--> 
+          </div>
+          <!--/patternSearchResults--> 
+          <a name="topic-actions"></a>
+          <div class="patternTopicActions">
+           <div class="patternTopicAction">
+            <span class="patternActionButtons"><a href="/twiki/view/SD/WebHome">View topic</a><span class="twikiSeparator">&nbsp;|&nbsp;</span><span><span><a href="/twiki/rdiff/SD/WebHome?type=history" rel="nofollow" title="View total topic history" accesskey="h"><span class="twikiAccessKey">H</span>istory</a></span>: <a rel="nofollow" href="/twiki/view/SD/WebHome?rev=53">r53</a> &lt; <a href="/twiki/view/SD/WebHome?rev=52" rel="nofollow">r52</a> <a href="/twiki/rdiff/SD/WebHome?rev1=52;rev2=51" rel="nofollow">&lt;</a> <a href="/twiki/view/SD/WebHome?rev=51" rel="nofollow">r51</a> <a href="/twiki/rdiff/SD/WebHome?rev1=51;rev2=50" rel="nofollow">&lt;</a> <a rel="nofollow" href="/twiki/view/SD/WebHome?rev=50">r50</a></span><span class="twikiSeparator">&nbsp;|&nbsp;</span><a href="/twiki/oops/SD/WebHome?template=oopsmore&amp;param1=53&amp;param2=53" rel="nofollow">More topic actions...</a></span>
+           </div>
+           <!--/patternTopicAction-->
+          </div>
+          <!--/patternTopicActions-->
+         </div>
+         <!-- /patternTopic--> 
+        </div>
+        <!-- /patternMainContents--> 
+       </div>
+       <!-- /patternMain--> 
+      </div>
+      <!-- /patternFloatWrap--> 
+      <div class="clear">
+       &nbsp;
+      </div> 
+     </div>
+     <!-- /patternOuter-->
+     <div id="patternBottomBar">
+      <div id="patternBottomBarContents">
+       <div id="patternWebBottomBar">
+        <div class="twikiCopyright">
+         <span class="twikiRight"> <a href="http://twiki.org/"><img src="/pub/TWiki/TWikiLogos/T-badge-88x31.gif" alt="This site is powered by the TWiki collaboration platform" width="88" height="31" title="This site is powered by the TWiki collaboration platform" border="0"></a></span>
+         <span class="twikiRight" style="padding:0 10px 0 10px"> <a href="http://www.perl.org/"><img src="/pub/TWiki/TWikiLogos/perl-logo-88x31.gif" alt="Powered by Perl" width="88" height="31" title="Powered by Perl" border="0"></a></span>Copyright © 2008-2020 by the contributing authors. All material on this collaboration platform is the property of the contributing authors. 
+         <br> Ideas, requests, problems regarding TWiki? 
+         <a href="mailto:sterbini@di.uniroma1.it?subject=TWiki%20Feedback%20on%20SD.WebHome">Send feedback</a>
+        </div>
+        <!--/twikiCopyright-->
+       </div>
+       <!--/patternWebBottomBar-->
+      </div>
+      <!-- /patternBottomBarContents-->
+     </div>
+     <!-- /patternBottomBar--> 
+    </div>
+    <!-- /patternPage--> 
+   </div>
+   <!-- /patternPageShadow--> 
+  </div>
+  <!-- /patternScreen--> 
+ </body>
+</html>

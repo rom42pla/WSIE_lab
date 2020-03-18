@@ -21,8 +21,10 @@ public class SimpleFetcher implements Fetcher {
 	@Override
 	public Document fetch(URL url) {
 		try {
+			// fetches the page
 			Document page = Jsoup.connect(url.toString()).get();
 			this.lastDocument = page;
+
 			return page;
 		} catch (IOException e) {
 			return null;
@@ -32,11 +34,14 @@ public class SimpleFetcher implements Fetcher {
 
 	@Override
 	public URL selectNextURLToFetch(List<URL> urls) {
-		// gets a random url from the list
-        //return urls.get(new Random().nextInt(urls.size())); 
-		
-		// gets the first element of the list
-        return urls.get(0); 
+		if (new Random().nextInt(2) == 0) {
+			// gets a random url from the list
+        	return urls.get(new Random().nextInt(urls.size())); 
+		}
+		else {
+			// gets the first element of the list
+			return urls.get(0); 
+		}
 	}
 
 }

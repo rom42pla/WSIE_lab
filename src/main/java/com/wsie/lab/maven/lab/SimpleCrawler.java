@@ -17,7 +17,7 @@ public class SimpleCrawler implements Crawler {
 		SimpleURLManager urlManager = new SimpleURLManager();
         SimpleFetcher fetcher = new SimpleFetcher();
         SimpleActionManager actionManager = new SimpleActionManager();
-        SimpleStorage storage = new SimpleStorage();
+        SimpleStorageWithFiles storage = new SimpleStorageWithFiles();
         
         
         
@@ -28,7 +28,10 @@ public class SimpleCrawler implements Crawler {
         ArrayList<String> seeds = new ArrayList<String>(
         		Arrays.asList(
         				"https://twiki.di.uniroma1.it/twiki/view/Estrinfo", 
-        				"http://groups.di.unipi.it/~francesc/lc.html"
+						"https://phd.uniroma1.it/web/BARDH-PRENKAJ_nP1602894_IT.aspx",
+						"https://www.python.org/",
+						"https://www.java.com/it/",
+						"https://www.microsoft.com/it-it"
         				));  
         
         // check if there is at least one seed in the list
@@ -54,13 +57,16 @@ public class SimpleCrawler implements Crawler {
         /**
 		 * Other parameters declaration
 		 */
+		String filespath = "./pages";
+		storage.cleanDirectory(filespath);
         int maxIters = 50;
         System.out.println("\t...max iterations until early stop: " + maxIters);
         
         
         
         
-        System.out.println("\nCRAWLING PHASE");
+		System.out.println("\nCRAWLING PHASE");
+		
         /**
 		 * Main loop
 		 */
@@ -71,13 +77,18 @@ public class SimpleCrawler implements Crawler {
         	
         	// selects next website to crawl according to a policy
         	URL currUrl = fetcher.selectNextURLToFetch(storage.getToVisitURLs());
-        	storage.markAsVisited(currUrl);
+			storage.markAsVisited(currUrl);
         	
         	// fetches the website
-        	Document site = fetcher.fetch(currUrl);
+			Document site = fetcher.fetch(currUrl);
         	
         	// if the fetch has succeeded, add all the hyperlinks to the list
         	if (site != null) {
+				// saves website's HTML to a file
+				String filepath = filespath + "/page_" + storage.getVisitedURLs().size() + ".txt";
+				String filecontent = currUrl.toString() + "\n\n" + site.toString();
+				storage.saveToFile(filepath, filecontent);
+
         		// retrieves all the hyperlinks in the page
         		ArrayList<URL> links = actionManager.getLinksInPage(site);
         		int newLinks = 0;

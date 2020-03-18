@@ -1,0 +1,104 @@
+http://people.ischool.berkeley.edu/~hearst/irbook/index.html
+
+<html>
+ <head> 
+  <title>Modern Information Retrieval</title> 
+  <meta NAME="keywords" VALUE="Information Retrieval, Information, Retrieval, Query Languages, Searching, Indexing, Book"> 
+  <meta NAME="description" VALUE="A book on Information Retrieval by Ricardo Baeza-Yates and Berthier Ribeiro-Neto. Published by Addison-Wesley-Longman"> 
+ </head> 
+ <body bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#283D5C"> 
+  <table border="0" cellpadding="3" cellspacing="5"> 
+   <tbody>
+    <tr> 
+     <td rowspan="2"> <img SRC="icn/jcover.gif" width="200"> 
+      <div align="right"> 
+       <font size="2"> (<a href="backcover.html">back cover</a>) </font> 
+      </div> </td> 
+     <td valign="top"> <b><font face="arial,helvetica" size="+2">Modern Information Retrieval</font><br></b> </td> 
+    </tr> 
+    <tr> 
+     <td valign="top"> 
+      <dl> 
+       <dt>
+        <b><font face="arial,helvetica" size="+1"><a href="authors.html">Ricardo Baeza-Yates</a></font></b>
+        <br> 
+       </dt>
+       <dd> 
+        <font face="arial,helvetica" size="-1">Depto. de Ciencias de la Computaci�n<br> Universidad de Chile<br> Santiago, Chile</font> 
+       </dd>
+      </dl> <br> 
+      <dl> 
+       <dt>
+        <b><font face="arial,helvetica" size="+1"><a href="authors.html">Berthier Ribeiro-Neto</a></font></b>
+        <br> 
+       </dt>
+       <dd>
+        <font face="arial,helvetica" size="-1">Depto. de Ciencia da Computação<br> Universidad Federal de Minas Gerais<br> Belo Horizonte, Brasil</font> 
+       </dd>
+      </dl> <font face="arial,helvetica" size="-1"> <br><br> <p> With the collaboration of <a href="contrib.html#ebertino">E. Bertino</a>, <a href="contrib.html#ebrown">E. Brown</a>, <a href="contrib.html#bcatania">B. Catania</a>, <a href="contrib.html#cfaloutsos">C. Faloutsos</a>, <a href="contrib.html#eferrari">E. Ferrari</a>, <a href="contrib.html#efox">E. Fox</a>, <a href="contrib.html#mhearst">M. Hearst</a>, <a href="contrib.html#gnavarro">G. Navarro</a>, <a href="contrib.html#erasmussen">E. Rasmussen</a>, <a href="contrib.html#osornil">O. Sornil</a> and <a href="contrib.html#nziviani">N. Ziviani</a>. </p> </font></td> 
+    </tr> 
+   </tbody>
+  </table> 
+  <hr SIZE="2"> 
+  <center> 
+   <font size="-1"> Locations (<i>mirrors</i>): <a href="http://www.dcc.ufmg.br/irbook">Brazil</a> - <a href="http://sunsite.dcc.uchile.cl/irbook">Chile</a> - <a href="http://pluto.sm.dsi.unimi.it/irbook/">Italy</a> - <a href="http://www-lsi.upc.es/~rbaeza/irbook/">Spain</a> - <a href="http://www.sims.berkeley.edu/~hearst/irbook">USA</a> </font> 
+  </center> 
+  <hr SIZE="2"> 
+  <table border="0" cellpadding="5" cellspacing="10"> 
+   <tbody>
+    <tr> 
+     <td bgcolor="#e5e5e5"> &nbsp; </td>
+     <td> <p> <b>Information retrieval</b> (IR) has changed considerably in the last years with the expansion of the Web (World Wide Web) and the advent of modern and inexpensive graphical user interfaces and mass storage devices. </p> <p> As a result, traditional IR textbooks have become quite out-of-date which has led to the introduction of new IR books recently. Nevertheless, we believe that there is still great need of a book that approaches the field in a rigorous and complete way from a computer-science perspective (in opposition to a user-centered perspective). </p> <p> This book is an effort to partially fulfill this gap and should be useful for a first course on information retrieval as well as for a graduate course on the topic. </p> <p> These WWW pages are <b>not a digital version of the book</b>, nor the complete contents of it. Here you will find the preface, table of contents, glossary and <b>two chapters</b> available for reading on-line. The printed version can be <a href="x">ordered</a> directly from Addison-Wesley-Longman. </p> </td> 
+     <td align="center" valign="middle" width="10%" bgcolor="#e5e5e5"> <p> <img height="20" width="20" src="icn/aw.gif"><br> <font size="2" face="arial,helvetica"> © <a href="http://www.awl.com/">Addison Wesley Longman</a> Publishing Co. Inc.<br><br> You can <b><a href="x">order</a></b> this book on-line with a secure form, or <a href="x">search</a> other titles from A/W about Information Retrieval. </font> </p></td> 
+    </tr> 
+   </tbody>
+  </table> 
+  <hr SIZE="2"> 
+  <font face="arial,helvetica" color="#306060"> <h1>Overview</h1> </font> 
+  <p> The book is composed of two portions which complement and balance each other. The core portion includes 9 chapters authored or coauthored by the designers of the book. The second portion, which is fully integrated with the first, is formed by 6 state-of-the-art chapters written by <a href="contrib.html">leading researchers</a> in their fields. </p> 
+  <p> A same notation and <a href="glossary.html">glossary</a> are employed in all the chapters. Thus, despite the fact that several people contributed to the text, this book is really much more a textbook than an edited collection of chapters written by separate authors. Further, contrary to a collection of chapters, the contents and organization of this book have been carefully designed by the main <a href="authors.html">authors</a> to present a cohesive view of all the important aspects of modern information retrieval. </p> 
+  <font face="arial,helvetica" color="#306060"> <a name="contents"><h1>Contents</h1></a> </font> 
+  <p><b>Full text</b> of Chapters 1 (<a href="chapters/chap1.html">Introduction</a>) and 10 (<a href="chapters/chap10.html">User Interfaces and Visualization</a>) are available on-line, as well as a table of contents, exercises and resources for other chapters.</p> 
+  <ul> 
+   <li><a href="preface.html">Preface</a> </li>
+   <li><a href="acks.html">Acknowledgements</a> </li>
+  </ul> 
+  <ol> 
+   <b></b>
+   <li><b></b><a href="chapters/chap1.html"><b>Introduction</b></a> </li>
+   <li><a href="chapters/chap2.html">Modeling</a> </li>
+   <li><a href="chapters/chap3.html">Retrieval Evaluation</a> </li>
+   <li><a href="chapters/chap4.html">Query Languages</a> (with <a href="contrib.html#gnavarro">G. Navarro</a>) </li>
+   <li><a href="chapters/chap5.html">Query Operations</a> </li>
+   <li><a href="chapters/chap6.html">Text and Multimedia Languages and Properties</a> </li>
+   <li><a href="chapters/chap7.html">Text Operations</a> (with <a href="contrib.html#nziviani">N. Ziviani</a>) </li>
+   <li><a href="chapters/chap8.html">Indexing and Searching</a> (with <a href="contrib.html#gnavarro">G. Navarro</a>) <br><br> </li>
+   <li><a href="chapters/chap9.html">Parallel and Distributed IR</a> (by <a href="contrib.html#ebrown">E. Brown</a>) <b></b></li>
+   <li><a href="chapters/chap10.html"><b>User Interfaces and Visualization</b></a> (by <a href="contrib.html#mhearst">M. Hearst</a>) </li>
+   <li><a href="chapters/chap11.html">Multimedia IR: Models and Languages</a> (by <a href="contrib.html#ebertino">E. Bertino</a>, <a href="contrib.html#bcatania">B. Catania</a> and <a href="contrib.html#eferrari">E. Ferrari</a>) </li>
+   <li><a href="chapters/chap12.html">Multimedia IR: Indexing and Searching</a> (by <a href="contrib.html#cfaloutsos">C. Faloutsos</a>) </li>
+   <li><a href="chapters/chap13.html">Searching the Web</a> </li>
+   <li><a href="chapters/chap14.html">Libraries and Bibliographical Systems</a> (by <a href="contrib.html#erasmussen">E. Rasmussen</a>) </li>
+   <li><a href="chapters/chap15.html">Digital Libraries</a> (by <a href="contrib.html#efox">E. Fox</a> and <a href="contrib.html#osornil">O. Sornil</a>) </li>
+  </ol> 
+  <ul> 
+   <li><a href="glossary.html">Glossary</a> </li>
+   <li><a href="porter.html">Porter's Algorithm</a> </li>
+   <li>Biographies: <a href="authors.html">main authors</a> and <a href="contrib.html">contributors</a> </li>
+   <li>Bibliography: The book contains more that 850 references to books, papers, and Web pages. Most of the later ones are available here, in <a href="links.html">general resources</a>. Specific resources and newer references are available at the end of each chapter. </li>
+  </ul> 
+  <font face="arial,helvetica" color="#306060"> <h1>Reference Collection</h1> </font> 
+  <ul> 
+   <li>A practical collection of documents on cystic fibrosis, queries, and relevant answers is available in text ASCII and XML formats <a href="cfc.html">here</a>. </li>
+  </ul> 
+  <font face="arial,helvetica" color="#306060"> <h1>Preliminary teaching <a href="teaching/index.html">resources</a> (NEW!)</h1> </font> 
+  <p> <font face="arial,helvetica" color="#306060"> </font></p>
+  <h1><font face="arial,helvetica" color="#306060">Errata</font></h1>
+  <font face="arial,helvetica" color="#306060"> </font> The errata is 
+  <a href="errata.html">here</a>. Perfection does not exist! 
+  <font face="arial,helvetica" color="#306060"> <h1>About</h1> </font> 
+  <p>© <a href="http://www.awl.com/">Addison Wesley Longman</a> Publishing Co. Inc.</p> 
+  <hr> 
+  <address> © This Web site was designed by Ricardo Baeza-Yates and Carlos Castillo and is still under construction. We thank the comments of Berthier Ribeiro-Neto and Marti Hearst. </address>  
+ </body>
+</html>
