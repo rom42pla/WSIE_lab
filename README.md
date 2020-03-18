@@ -9,4 +9,4 @@ Languages used are:
 
 ## What's inside?
 * a **very simple web crawler** that scrapes pages starting from the seeds given until there are no more urls in the crawling frontier or an iterations cap is reached
-![](imgs/SimpleCrawler_v0.1.png)
+![](imgs/SimpleCrawler.png)
