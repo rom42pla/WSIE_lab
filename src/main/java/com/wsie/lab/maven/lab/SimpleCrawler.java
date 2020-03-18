@@ -35,16 +35,17 @@ public class SimpleCrawler implements Crawler {
         				));  
         
         // check if there is at least one seed in the list
-        if(seeds.size() < 1) {
+        if(seeds.isEmpty()) {
         	throw new Exception("No seeds given");
         }
         
         // adding seeds to the toVisit list
-        for (String seed : seeds) { 		      
+        /* for (String seed : seeds) { 		      
 	        URL url = urlManager.toURL(seed);
 	        if(url != null)	
 	        	storage.addToVisit(url);
-        }  
+		}   */
+		storage.addToVisit(seeds);
         
         // printing the seeds
         System.out.println("\t...seeds:");
@@ -59,8 +60,8 @@ public class SimpleCrawler implements Crawler {
 		 */
 		String filespath = "./pages";
 		storage.cleanDirectory(filespath);
-        int maxIters = 50;
-        System.out.println("\t...max iterations until early stop: " + maxIters);
+        final int MAX_ITERS = 50;
+        System.out.println("\t...max iterations until early stop: " + MAX_ITERS);
         
         
         
@@ -72,7 +73,7 @@ public class SimpleCrawler implements Crawler {
 		 */
         // loops
         int currIter = 0;
-        while(!storage.getToVisitURLs().isEmpty() && (currIter < maxIters)) {
+        while(!storage.getToVisitURLs().isEmpty() && (currIter < MAX_ITERS)) {
         	currIter++;
         	
         	// selects next website to crawl according to a policy
@@ -93,7 +94,9 @@ public class SimpleCrawler implements Crawler {
         		ArrayList<URL> links = actionManager.getLinksInPage(site);
         		int newLinks = 0;
         		
-        		// eventually adds the hyperlinks to the storage
+				// eventually adds the hyperlinks to the storage
+				// HERE SOME IMPROVEMNTS CAN BE MADE: FOR INSTANCE WE COULD OVERLOAD THE METHOD IN ORDER TO TAKE AN A.LIST AS INPUT
+				// AND MOST IMPORTANTLY (EFFICIENCY) WE COULD MOVE THE CONTROL PHASE INSIDE THE METHOD (WE ALREADY CHECK VISITED, ADD TOVISIT)
         		for(URL link : links) {
         			if(!storage.getVisitedURLs().contains(link) && !storage.getToVisitURLs().contains(link)) {
         				storage.addToVisit(link);
