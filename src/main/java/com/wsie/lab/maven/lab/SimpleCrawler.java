@@ -3,6 +3,8 @@ package com.wsie.lab.maven.lab;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Dictionary;
+import java.util.Map;
 
 import org.jsoup.nodes.Document;
 
@@ -19,7 +21,7 @@ public class SimpleCrawler implements Crawler {
         SimpleActionManager actionManager = new SimpleActionManager();
         SimpleStorageWithFiles storage = new SimpleStorageWithFiles();
         
-        
+        RomaTodayActionManager romaTodayActionManager = new RomaTodayActionManager();
         
         
         /**
@@ -27,11 +29,7 @@ public class SimpleCrawler implements Crawler {
 		 */
         ArrayList<String> seeds = new ArrayList<String>(
         		Arrays.asList(
-        				"https://twiki.di.uniroma1.it/twiki/view/Estrinfo", 
-						"https://phd.uniroma1.it/web/BARDH-PRENKAJ_nP1602894_IT.aspx",
-						"https://www.python.org/",
-						"https://www.java.com/it/",
-						"https://www.microsoft.com/it-it"
+        				"http://www.romatoday.it/eventi/"
         				));  
         
         // check if there is at least one seed in the list
@@ -40,11 +38,6 @@ public class SimpleCrawler implements Crawler {
         }
         
         // adding seeds to the toVisit list
-        /* for (String seed : seeds) { 		      
-	        URL url = urlManager.toURL(seed);
-	        if(url != null)	
-	        	storage.addToVisit(url);
-		}   */
 		storage.addToVisit(seeds);
         
         // printing the seeds
@@ -85,24 +78,36 @@ public class SimpleCrawler implements Crawler {
         	
         	// if the fetch has succeeded, add all the hyperlinks to the list
         	if (site != null) {
-				// saves website's HTML to a file
-				String filepath = filespath + "/page_" + storage.getVisitedURLs().size() + ".txt";
-				String filecontent = currUrl.toString() + "\n\n" + site.toString();
-				storage.saveToFile(filepath, filecontent);
-
-        		// retrieves all the hyperlinks in the page
-        		ArrayList<URL> links = actionManager.getLinksInPage(site);
-        		int newLinks = 0;
+        		// retrieves all the hyperlinks in the page				
+				ArrayList<URL> articles = romaTodayActionManager.getArticlesLinks(site);
+				int newLinks = 0;
         		
 				// eventually adds the hyperlinks to the storage
-				// HERE SOME IMPROVEMNTS CAN BE MADE: FOR INSTANCE WE COULD OVERLOAD THE METHOD IN ORDER TO TAKE AN A.LIST AS INPUT
-				// AND MOST IMPORTANTLY (EFFICIENCY) WE COULD MOVE THE CONTROL PHASE INSIDE THE METHOD (WE ALREADY CHECK VISITED, ADD TOVISIT)
-        		for(URL link : links) {
+        		for(URL link : articles) {
         			if(!storage.getVisitedURLs().contains(link) && !storage.getToVisitURLs().contains(link)) {
         				storage.addToVisit(link);
         				newLinks++;
         			}
-        		}
+				}
+
+				String filepath = null;
+				String filecontent = null;
+				// if the page is an article of RomaToday
+				if(romaTodayActionManager.isArticle(currUrl)){
+					// saves the article to a file
+					Map<String, String> content = romaTodayActionManager.getContentOfArticle(site);
+					filepath = filespath + "/RomaToday_" + content.get("title").toString().replace(" ", "-").replace("/", "") + ".txt";
+					filecontent = romaTodayActionManager.getContentOfArticleAsString(site);
+					
+				}
+				else {
+					// saves website's HTML to a file
+					filepath = filespath + "/page_" + storage.getVisitedURLs().size() + ".txt";
+					filecontent = currUrl.toString() + "\n\n" + site.toString();
+				}
+				storage.saveToFile(filepath, filecontent);
+				
+				
         		
         		System.out.println("\t...scraped " + currUrl + " (" + newLinks + " new links in page)");
         	}
