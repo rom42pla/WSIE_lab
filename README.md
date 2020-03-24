@@ -10,3 +10,5 @@ Languages used are:
 ## What's inside?
 * a **very simple web crawler** that scrapes and saves pages starting from the seeds given until there are no more urls in the crawling frontier or an iterations cap is reached
 ![](imgs/SimpleCrawler.png)
+
+  * the crawler retrieves last events on [RomaToday](http://romatoday.it) (a container of news and events in the province of Roma) and saves them as .txt
