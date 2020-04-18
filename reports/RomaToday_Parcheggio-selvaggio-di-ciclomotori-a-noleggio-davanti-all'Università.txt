@@ -1,0 +1,15 @@
+DATE
+14 febbraio 2020 05:40
+
+STREET_ADDRESS
+Via Panama, 25 
+
+CITY
+ Parioli
+
+DESCRIPTION
+Parcheggio selvaggio di ciclomotori a noleggio davanti alla luiss 
+
+TITLE
+Parcheggio selvaggio di ciclomotori a noleggio davanti all'Università
+

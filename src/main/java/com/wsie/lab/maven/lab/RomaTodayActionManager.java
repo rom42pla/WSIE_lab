@@ -46,6 +46,59 @@ public class RomaTodayActionManager implements ActionManager {
         return links;
     }
 
+    public ArrayList<URL> getReportsLinks(Document site) {
+		ArrayList<URL> links = new ArrayList<URL>();
+		SimpleURLManager urlManager = new SimpleURLManager();
+		
+		Elements linksElements = site.select("article");
+        for(Element element : linksElements){
+            String rawUrl = "http://www.romatoday.it" + element.select(".card-heading").select("a").attr("href").toString();
+            URL url = urlManager.toURL(rawUrl);
+            links.add(url);
+        }
+        return links;
+    }
+
+    public Map<String, String> getContentOfReport(Document site) {
+        Map<String, String> content = new HashMap<>();
+
+        Element report = site.body();
+        String title = report.select(".entry-title").text();
+        String description = report.select(".segnalazione_inside_txt").select("p").text();
+        String date = null;
+        String street_address = null;
+        String city = null;
+        //String HTML = doc.toString(); NON MI INTERESSA
+
+        // date
+        date = report.select(".datestamp").text();
+
+        // place
+        String[] location = report.select(".map-address").text().split("·");
+        if (location.length != 0) {
+            try {
+                street_address = location[0];
+                city = location[1];    
+            } catch (Exception e) {
+                //TODO: handle exception
+                System.out.println("The street or the City is left blank!");
+            }
+            
+        }
+
+
+
+        if(title != null)   content.put("title", title);
+        if(description != null)   content.put("description", description);
+        if(date != null)    content.put("date", date);
+        if(street_address != null)   content.put("street_address", street_address);
+        if(city != null)   content.put("city", city);
+        //if(HTML != null)   content.put("HTML", HTML);     NON MI INTERESSA
+
+		return content;
+    
+    }
+
     public Map<String, String> getContentOfArticle(Document site) {
         Map<String, String> content = new HashMap<String, String>();
 
@@ -109,6 +162,17 @@ public class RomaTodayActionManager implements ActionManager {
 		return content;
     }
 
+    public String getContentOfReportAsString(Document page) {
+        Map<String, String> content = this.getContentOfReport(page);
+        String contentAsString = "";
+
+        // for each key/value pair
+        for (Map.Entry<String, String> entry : content.entrySet())
+            contentAsString += entry.getKey().toUpperCase() + "\n" + entry.getValue() + "\n\n";
+
+        return contentAsString;
+    }
+
     public String getContentOfArticleAsString(Document site){
         Map<String, String> content = this.getContentOfArticle(site);
         String contentAsString = "";
@@ -130,6 +194,11 @@ public class RomaTodayActionManager implements ActionManager {
         else{
             return false;
         }     
+    }
+
+    public boolean isReport(URL url){
+        String pattern = ".*www.romatoday.it\\/social\\/segnalazioni\\/.*\\.html";
+        return Pattern.compile(pattern).matcher(url.toString()).matches();
     }
 
 }

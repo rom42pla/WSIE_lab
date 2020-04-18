@@ -1,0 +1,15 @@
+DATE
+15 marzo 2020 10:31
+
+STREET_ADDRESS
+Via Giuseppe Berto, 195 
+
+CITY
+ Eur
+
+DESCRIPTION
+Un modo piacevolissimo per sentirsio vicini. C' era bisogno del virus???? 
+
+TITLE
+Via Berto, concerto
+

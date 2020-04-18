@@ -1,0 +1,15 @@
+DATE
+09 febbraio 2020 03:55
+
+STREET_ADDRESS
+Via Quintilio Varo, 23 
+
+CITY
+ Cinecittà
+
+DESCRIPTION
+Atti vandalici nella notte tra l'8 ed il 9 febbraio 2020. A farne le spese decine e decine di autoveicoli parcheggiati nelle vie adiacenti Largo Appio Claudio ed in maniera considerevole in via Quintilio Varo, dal civico 23 al civico 63 ed anche in Via Sestio Calvino. Nello specifico, sono stati danneggiati gli specchietti esterni delle autovetture. Nella mattinata, verso le 10:30 sono state notate autovetture della Polizia di Stato. 
+
+TITLE
+Atti vandalici a Cinecittà
+

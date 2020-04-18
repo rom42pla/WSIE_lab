@@ -1,0 +1,15 @@
+DATE
+17 febbraio 2020 11:29
+
+STREET_ADDRESS
+Via Pellegrino Matteucci 
+
+CITY
+ Garbatella
+
+DESCRIPTION
+Il Quartiere si attiva per chiedere l'allargamento del Parco Pisino utilizzando l'area ora in disuso dell'ex benzinaio di Via Pellegrino Matteucci 
+
+TITLE
+Il Quartiere si attiva per chiedere l'allargamento del Parco Pisino
+
