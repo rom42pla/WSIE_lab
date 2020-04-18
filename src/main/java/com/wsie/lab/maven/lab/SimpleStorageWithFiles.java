@@ -15,7 +15,7 @@ public class SimpleStorageWithFiles implements StorageWithFiles {
 
 	@Override
 	public void addToVisit(URL url) {
-		if (!this.getVisitedURLs().contains(url)) {
+		if (!this.getVisitedURLs().contains(url) && !this.getToVisitURLs().contains(url)) {
 			this.toVisit.add(url);
 		}
 	}
@@ -65,6 +65,14 @@ public class SimpleStorageWithFiles implements StorageWithFiles {
 				System.out.println("\t" + url);
 			}
 		}
+	}
+
+	public void printSeeds() {
+		for (URL url : toVisit) {
+			System.out.println("\t\t" + url);
+		}
+
+		System.out.println("\n\tTotal amount of initial seed: " + toVisit.size());
 	}
 
 	@Override

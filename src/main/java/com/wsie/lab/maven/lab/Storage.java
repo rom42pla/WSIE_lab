@@ -5,6 +5,7 @@ import java.util.List;
 
 public interface Storage {
 	
+	
 	public void addToVisit(URL url);
 	public void markAsVisited(URL url);
 	
